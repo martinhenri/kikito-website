@@ -1,13 +1,87 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+body {
+  background: black;
+  color: white;
+}
+
+.title-icon-nuke {
+  align-self: center;
+}
+
+.fade-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.fade-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
+
+@font-face {
+  font-family: "Futura Light";
+  src: url("./fonts/FuturaLTLight.ttf") format("ttf"); /* Spécifiez le chemin vers votre fichier de police */
+  font-weight: normal;
+  font-style: normal;
+}
+
+p {
+  font-family: "Futura Light", sans-serif; /* Utilisez la police dans votre feuille de style */
+}
+
+#menu {
+  padding-top: 25px;
+  padding-bottom: 45px;
+  position: sticky;
+  top: 0;
+  background-color: black;
+  z-index: 1;
+}
+
+#menu ul {
+  padding-left: 0px;
+}
+
+#menu div,
+#menu nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#menu img {
+  width: 139px;
+  height: 90px;
+  object-fit: cover;
+}
+
+#menu a {
+  color: white;
+  font-weight: 300;
+  transition: all 0.5s ease-in-out;
+}
+
+#menu a:hover {
+  color: rgb(131 103 99);
 }

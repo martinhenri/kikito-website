@@ -1,24 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {
+  Route,
+  BrowserRouter as Router,
+  Routes,
+  useLocation,
+} from "react-router-dom";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
+import "./App.css";
+import Navbar from "./components/Navbar";
+import About from "./pages/About";
+import Animation from "./pages/Animation";
+import Home from "./pages/Home";
+import Paintigns from "./pages/Paintings";
+import TreeD from "./pages/TreeD";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <AnimationApp />
+    </Router>
+  );
+}
+
+function AnimationApp() {
+  let location = useLocation();
+
+  return (
+    <>
+      <Navbar />
+      <main>
+        <TransitionGroup>
+          <CSSTransition
+            key={location.pathname}
+            classNames="fade"
+            timeout={500}
+          >
+            <Routes location={location}>
+              <Route exact path="/" element={<Home />} />
+              <Route path="/3d" element={<TreeD />} />
+              <Route path="/paintings" element={<Paintigns />} />
+              <Route path="/animation" element={<Animation />} />
+              <Route path="/about" element={<About />} />
+            </Routes>
+          </CSSTransition>
+        </TransitionGroup>
+      </main>
+    </>
   );
 }
 
