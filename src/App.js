@@ -6,7 +6,6 @@ import {
   useLocation,
 } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
-import "./App.css";
 import Navbar from "./components/Navbar";
 import About from "./pages/About";
 import Animation from "./pages/Animation";
