@@ -4,26 +4,11 @@ import ReactCompareImage from "react-compare-image";
 const TreeD = () => {
   return (
     <div>
-      <h1
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
+      <h1>
         <span>LIGHTING COMPOSITING </span>
         <img className="title-icon-nuke" alt="Title icon" src="/icn-nuke.png" />
       </h1>
-      <p
-        style={{
-          marginTop: "60px",
-          fontSize: "18px",
-          fontFamily: "fantasy",
-          marginLeft: "4%",
-          marginRight: "4%",
-          textAlign: "justify",
-        }}
-      >
+      <p>
         Explorez ma démo de compositing artist, condensé de 4 ans d'expérience.
         Le compositing est l'assemblage de différentes couches d'images pour
         créer une image finale. Cela implique l'ajustement des couleurs, de la

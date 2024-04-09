@@ -1,7 +1,113 @@
-import React from "react";
-
+import React, { useRef } from "react";
+import { digitalDrawings, paintings } from "../components/Gallery/Images";
+import KikitoGallery from "../components/Gallery/KikitoGallery";
 const Paintings = () => {
-  return <h1>Paintigns section</h1>;
+  const scrollContainerRef = useRef(null);
+
+  // useEffect(() => {
+  //   const handleWheel = (event) => {
+  //     const scrollContainer = scrollContainerRef.current;
+
+  //     const containerBottom =
+  //       scrollContainerRef?.current?.getBoundingClientRect().bottom;
+  //     const containerTop =
+  //       scrollContainerRef?.current?.getBoundingClientRect().top;
+
+  //     // console.log("containerBottom", containerBottom);
+  //     // console.log("containerTop", containerTop);
+  //     const windowHeight = window.innerHeight;
+  //     // console.log("windowHeight", windowHeight);
+
+  //     const isAtEnd =
+  //       scrollContainer.scrollLeft >=
+  //       scrollContainer.scrollWidth - scrollContainer.clientWidth;
+
+  //     const menu = document.getElementById("menu");
+  //     const isAtStart = scrollContainer.scrollLeft === 0;
+
+  //     // if (
+  //     //   containerBottom > windowHeight &&
+  //     //   containerBottom + event.deltaY < windowHeight
+  //     // ) {
+  //     //   event.preventDefault();
+  //     //   window.scrollTo({
+  //     //     top: containerTop - windowHeight / 2,
+  //     //     behavior: "smooth",
+  //     //   });
+  //     // }
+
+  //     if (
+  //       (containerBottom < windowHeight && event.deltaY > 0 && !isAtEnd) ||
+  //       (containerTop > menu.offsetHeight && event.deltaY < 0 && !isAtStart)
+  //     ) {
+  //       event.preventDefault();
+  //       if (
+  //         containerTop < menu.offsetHeight ||
+  //         containerBottom > windowHeight
+  //       ) {
+  //         window.scrollTo({
+  //           top: containerTop,
+  //           behavior: "smooth",
+  //         });
+  //       }
+  //       if (scrollContainerRef.current) {
+  //         scrollContainerRef.current.scrollLeft += event.deltaY;
+  //       }
+  //     }
+  //   };
+
+  // window.addEventListener("wheel", handleWheel, {
+  //   passive: false,
+  // });
+
+  //   return () => {
+  //     window.removeEventListener("wheel", handleWheel);
+  //   };
+  // }, []);
+
+  return (
+    <div className="container">
+      <h1>PEINTURES</h1>
+      <p>
+        Je réalise mes œuvres avec la peinture du posca et de l'acrylique,
+        enfant des années 90, mon style est marqué par la pop culture avec une
+        palette de couleurs à la fois vives et douces, le rose, l'orange, le
+        bleu, le vert et le jaune sont les tons qui revienne le plus.
+      </p>
+      <div
+        ref={scrollContainerRef}
+        className="kikito-gallery kikito-gallery-paintings"
+      >
+        <KikitoGallery images={paintings} />
+      </div>
+      <div className="paintings-title">
+        <div>
+          <h1>DESSINS NUMERIQUES </h1>
+        </div>
+        <div className="display-flex-align-items-center">
+          {" "}
+          <img
+            src="/logo/adobe-photoshop-logo-0.png"
+            style={{ width: "40px", height: "40px", marginLeft: "30px" }}
+            alt="photoshop-logo"
+          />
+          <img
+            src="/logo/illustrator-icon-new.png"
+            style={{ width: "30px", height: "30px" }}
+            alt="illustrator-logo"
+          />
+        </div>
+      </div>
+
+      <p>
+        Explorez mes créations en dessin numérique réaliser sur Photoshop et/ou
+        Illustrator. Concepts de personnages, décors, affiches.
+      </p>
+      <div className="kikito-gallery kikito-gallery-digital-drawings">
+        <KikitoGallery images={digitalDrawings} maxRows={2} />
+      </div>
+    </div>
+  );
 };
 
 export default Paintings;

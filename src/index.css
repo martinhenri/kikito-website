@@ -39,15 +39,104 @@ body {
   transition: opacity 300ms, transform 300ms;
 }
 
+.ReactGridGallery_custom-overlay:hover {
+  opacity: 0.5;
+  background-color: grey;
+}
+
+.paintings-title {
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-left: 100px; */
+}
+
+@media (max-width: 600x) {
+  .paintings-title {
+    margin-left: 0px;
+  }
+}
+
+.kikito-gallery-paintings #ReactGridGallery {
+  width: 2100px;
+}
+.kikito-gallery-digital-drawings #ReactGridGallery {
+  width: 2300px;
+}
+
+#ReactGridGallery img {
+  height: 250px !important;
+}
+
+.ReactGridGallery_tile {
+  background-color: black !important;
+}
+
+.ReactGridGallery_tile-viewport {
+  height: 100% !important;
+}
+
+.kikito-gallery::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.kikito-gallery {
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+#ReactGridGallery > div {
+  justify-content: space-between;
+  padding: 20px;
+  row-gap: 20px;
+}
+
 @font-face {
   font-family: "Futura Light";
   src: url("./fonts/FuturaLTLight.ttf") format("ttf"); /* Spécifiez le chemin vers votre fichier de police */
   font-weight: normal;
   font-style: normal;
 }
-
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
 p {
-  font-family: "Futura Light", sans-serif; /* Utilisez la police dans votre feuille de style */
+  margin-top: 60px;
+  font-size: 18px;
+  font-family: fantasy;
+  margin-left: 4%;
+  margin-right: 4%;
+  text-align: justify;
+}
+
+.display-flex-align-items-center {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 980x) {
+  .container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 980px) {
+  .container {
+    min-width: 980px;
+  }
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto; /* Cette propriété auto applique une marge égale à gauche et à droite, centrée horizontalement */
 }
 
 #menu {
@@ -84,4 +173,15 @@ p {
 
 #menu a:hover {
   color: rgb(131 103 99);
+}
+
+.custom-overlay__caption {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  width: 100%;
+  color: rgba(216, 215, 215, 0.813);
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
