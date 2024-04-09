@@ -1,0 +1,78 @@
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Open Sans", sans-serif;
+
+  --spacing-1: 1rem;
+  --spacing-2: 2rem;
+  --spacing-3: 3rem;
+  --spacing-4: 4rem;
+  --spacing-5: 5rem;
+  --spacing-7: 7rem;
+  --spacing-10: 10rem;
+  --spacing-15: 15rem;
+  --spacing-20: 20rem;
+  --spacing-25: 25rem;
+  --spacing-30: 30rem;
+  --spacing-35: 35rem;
+  --spacing-40: 40rem;
+  --spacing-45: 45rem;
+  --spacing-50: 50rem;
+
+  box-sizing: border-box;
+}
+
+.w-100 {
+  width: 100%;
+}
+/* 
+ * When developing please add reusable css class if necessary with the following pattern 
+ *   .mt - margin top
+ *   .mb - margin bottom
+ *   .ml - margin left
+ *   .mr - margin right
+ *   .m - margin
+ *   .pt - padding top
+ *   .pb - padding bottom
+ *   .pl - padding left
+ *   .pr - padding right
+ *   .p - padding
+ *   .d-flex - display flex
+ *   .align-items-center - align items center
+ *   .justify-content-center - justify content center
+ *   .text-center - text align center
+ *   .text-left - text align left 
+ *  ...
+ */
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.m-1 {
+  margin: var(--spacing-1);
+}
+.m-2 {
+  margin: var(--spacing-2);
+}
+
+.mt-1 {
+  margin-top: var(--spacing-1);
+}
+.mt-2 {
+  margin-top: var(--spacing-2);
+}
+.mt-3 {
+  margin-top: var(--spacing-3);
+}
+.mt-4 {
+  margin-top: var(--spacing-4);
+}

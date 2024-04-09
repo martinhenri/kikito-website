@@ -3,10 +3,14 @@ import ReactCompareImage from "react-compare-image";
 
 const TreeD = () => {
   return (
-    <div>
+    <div className="container">
       <h1>
         <span>LIGHTING COMPOSITING </span>
-        <img className="title-icon-nuke" alt="Title icon" src="/icn-nuke.png" />
+        <img
+          className="title-icon-nuke"
+          alt="Title icon"
+          src="/logo/icn-nuke.png"
+        />
       </h1>
       <p>
         Explorez ma démo de compositing artist, condensé de 4 ans d'expérience.
@@ -17,33 +21,26 @@ const TreeD = () => {
         pour le cinéma, l'animation et les effets spéciaux.
       </p>
       <video
-        style={{ width: "94%", paddingLeft: "3%" }}
+        className="w-100"
         loop
         autoPlay
         mute
         controls
-        src="/DEMO_LEA_BISCARAT_2023_H264.mp4"
+        src="/videos/DEMO_LEA_BISCARAT_2023_H264.mp4"
       ></video>
-      <div style={{ padding: "10%", display: "flex" }}>
+      <div className="mt-4">
         <ReactCompareImage
-          leftImage="/before-1.png"
-          rightImage="/after-1.png"
+          leftImage="/compare-images/before-1.png"
+          rightImage="/compare-images/after-1.png"
         />
       </div>{" "}
-      <div style={{ paddingLeft: "10%", paddingRight: "10%", display: "flex" }}>
+      <div className="mt-4">
         <ReactCompareImage
-          leftImage="/before-2.jpeg"
-          rightImage="/after-2.jpeg"
+          leftImage="/compare-images/before-2.jpeg"
+          rightImage="/compare-images/after-2.jpeg"
         />
       </div>
-      <p
-        style={{
-          fontSize: "18px",
-          fontFamily: "fantasy",
-        }}
-      >
-        Lighting/compo projet Space Apéro
-      </p>
+      <p>Lighting/compo projet Space Apéro</p>
     </div>
   );
 };
