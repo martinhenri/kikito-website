@@ -42,6 +42,7 @@ const KikitoGallery = ({ images = [], ...props }) => {
         images={finalesImages}
         onClick={handleClick}
         enableImageSelection={false}
+        margin={0}
       />
       {!!currentImage && (
         /* @ts-ignore */

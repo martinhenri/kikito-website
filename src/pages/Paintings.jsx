@@ -87,12 +87,12 @@ const Paintings = () => {
         <div className="display-flex-align-items-center">
           {" "}
           <img
-            src="/logo/adobe-photoshop-logo-0.png"
+            src="/logos/adobe-photoshop-logo-0.png"
             style={{ width: "40px", height: "40px", marginLeft: "30px" }}
             alt="photoshop-logo"
           />
           <img
-            src="/logo/illustrator-icon-new.png"
+            src="/logos/illustrator-icon-new.png"
             style={{ width: "30px", height: "30px" }}
             alt="illustrator-logo"
           />

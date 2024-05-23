@@ -15,11 +15,6 @@ export const paintings = [
     caption: "Imbibé",
   },
   {
-    src: "/paintings/imbiber1.jpg",
-    original: "/paintings/imbiber1.jpg",
-    caption: "Imbibé",
-  },
-  {
     src: "/paintings/JimmyB.jpg",
     original: "/paintings/JimmyB.jpg",
     caption: "Jimmy B.",
@@ -33,6 +28,11 @@ export const paintings = [
     src: "/paintings/M.jpg",
     original: "/paintings/M.jpg",
     caption: "M.",
+  },
+  {
+    src: "/paintings/chartreuse-2-slip.png",
+    original: "/paintings/chartreuse-2-slip.png",
+    caption: "La chartreuse de slip",
   },
   {
     src: "/paintings/medusa.jpg",
@@ -50,14 +50,19 @@ export const paintings = [
     caption: "Cat & Climb",
   },
   {
+    src: "/paintings/chartreuse-de-slip.png",
+    original: "/paintings/chartreuse-2-slip.png",
+    caption: "La chartreuse de slip",
+  },
+  {
     src: "/paintings/miseEnscene3.png",
     original: "/paintings/miseEnscene3.png",
     caption: "Cat & Climb",
   },
   {
-    src: "/paintings/petitchat2.jpg",
-    original: "/paintings/petitchat2.jpg",
-    caption: "Le pommeau de José",
+    src: "/paintings/imbiber1.jpg",
+    original: "/paintings/imbiber1.jpg",
+    caption: "Imbibé",
   },
   {
     src: "/paintings/RaccoonDance.jpg",
@@ -70,9 +75,19 @@ export const paintings = [
     caption: "Safe place",
   },
   {
-    src: "/paintings/toile03.png",
-    original: "/paintings/toile03.png",
-    caption: "Safe place",
+    src: "/paintings/petitchat2.jpg",
+    original: "/paintings/petitchat2.jpg",
+    caption: "Le pommeau de José",
+  },
+  {
+    src: "/paintings/wall-painting.jpg",
+    original: "/paintings/wall-painting.jpg",
+    caption: "Wall painting",
+  },
+  {
+    src: "/paintings/venus-grenoble-associate.jpg",
+    original: "/paintings/venus-grenoble-associate.jpg",
+    caption: "Venus Grenoble",
   },
   {
     src: "/paintings/totaly.png",
@@ -83,13 +98,23 @@ export const paintings = [
 
 export const digitalDrawings = [
   {
+    src: "/digital-drawings/these-illustration.png",
+    original: "/digital-drawings/these-illustration.png",
+    caption: "Illustration de thèse",
+  },
+  {
+    src: "/digital-drawings/sister-love.png",
+    original: "/digital-drawings/sister-love.png",
+    caption: "Sister Love",
+  },
+  {
     src: "/digital-drawings/concept2.png",
     original: "/digital-drawings/concept2.png",
     caption: " VeloBoy",
   },
   {
-    src: "/digital-drawings/03.png",
-    original: "/digital-drawings/03.png",
+    src: "/digital-drawings/hey-joe.png",
+    original: "/digital-drawings/hey-joe.png",
     caption: "Hey Joe Music",
   },
   {

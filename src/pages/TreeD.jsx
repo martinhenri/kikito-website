@@ -7,9 +7,9 @@ const TreeD = () => {
       <h1>
         <span>LIGHTING COMPOSITING </span>
         <img
-          className="title-icon-nuke"
+          className="align-self-center"
           alt="Title icon"
-          src="/logo/icn-nuke.png"
+          src="/logos/icn-nuke.png"
         />
       </h1>
       <p>
@@ -27,7 +27,7 @@ const TreeD = () => {
         mute
         controls
         src="/videos/DEMO_LEA_BISCARAT_2023_H264.mp4"
-      ></video>
+      />
       <div className="mt-4">
         <ReactCompareImage
           leftImage="/compare-images/before-1.png"

@@ -17,10 +17,6 @@ body {
   color: white;
 }
 
-.title-icon-nuke {
-  align-self: center;
-}
-
 .fade-enter {
   opacity: 0;
   transform: scale(0.9);
@@ -59,10 +55,10 @@ body {
 }
 
 .kikito-gallery-paintings #ReactGridGallery {
-  width: 2100px;
+  width: 1600px;
 }
 .kikito-gallery-digital-drawings #ReactGridGallery {
-  width: 2300px;
+  width: 2400px;
 }
 
 #ReactGridGallery img {

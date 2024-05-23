@@ -49,6 +49,10 @@
   align-items: center;
 }
 
+.align-self-center {
+  align-self: center;
+}
+
 .justify-content-center {
   justify-content: center;
 }
@@ -75,4 +79,8 @@
 }
 .mt-4 {
   margin-top: var(--spacing-4);
+}
+
+.pl-1 {
+  padding-left: var(--spacing-1);
 }
