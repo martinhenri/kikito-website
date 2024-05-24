@@ -109,20 +109,19 @@ const Paintings = () => {
       </div>
       <div className="paintings-title">
         <div>
-          <h1>DESSINS NUMERIQUES </h1>
-        </div>
-        <div className="display-flex-align-items-center">
-          {" "}
-          <img
-            src="/logos/adobe-photoshop-logo-0.png"
-            style={{ width: "40px", height: "40px", marginLeft: "30px" }}
-            alt="photoshop-logo"
-          />
-          <img
-            src="/logos/illustrator-icon-new.png"
-            style={{ width: "30px", height: "30px" }}
-            alt="illustrator-logo"
-          />
+          <h1>
+            <pan>DESSINS NUMERIQUES </pan>
+            <img
+              src="/logos/adobe-photoshop-logo-0.png"
+              style={{ width: "40px", height: "40px", marginLeft: "30px" }}
+              alt="photoshop-logo"
+            />
+            <img
+              src="/logos/illustrator-icon-new.png"
+              style={{ width: "30px", height: "30px" }}
+              alt="illustrator-logo"
+            />
+          </h1>
         </div>
       </div>
 

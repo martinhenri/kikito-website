@@ -40,16 +40,6 @@ body {
 
 .paintings-title {
   margin-top: 90px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* margin-left: 100px; */
-}
-
-@media (max-width: 600x) {
-  .paintings-title {
-    margin-left: 0px;
-  }
 }
 
 .kikito-gallery-paintings #ReactGridGallery {
@@ -67,8 +57,10 @@ body {
   height: 250px !important;
 }
 
-.modelisation-gallery #ReactGridGallery img {
-  height: 15vw !important;
+@media screen and (max-width: 980px) {
+  .modelisation-gallery #ReactGridGallery img {
+    height: 15vw !important;
+  }
 }
 
 .modelisation-gallery #ReactGridGallery > div {
@@ -109,8 +101,9 @@ h1 {
   /* TODO handle responsive font-size for title and there images */
   /* font-size: 3vmin; */
 }
+
 p {
-  font-size: 2vmin;
+  font-size: 18px;
   text-align: justify;
 }
 
@@ -215,4 +208,17 @@ p {
   margin-top: 0;
   font-size: medium;
   margin-bottom: 35px;
+}
+
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 5vw !important;
+  }
+  h1 img {
+    height: 6vw !important;
+    width: 6vw !important;
+  }
+  p {
+    font-size: 2.5vmin !important;
+  }
 }
