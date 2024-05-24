@@ -5,6 +5,7 @@ import {
   Routes,
   useLocation,
 } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import Navbar from "./components/Navbar";
 import About from "./pages/About";
@@ -17,6 +18,7 @@ function App() {
   return (
     <Router>
       <AnimationApp />
+      <Analytics />
     </Router>
   );
 }
