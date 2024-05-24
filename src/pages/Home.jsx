@@ -7,7 +7,7 @@ const Home = () => {
         className="w-100"
         loop
         autoPlay
-        mute
+        muted
         src="/videos/raccoonVECTEUR_H264.mp4"
       />
     </div>
