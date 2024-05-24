@@ -47,7 +47,6 @@ const KikitoGallery = ({ images = [], ...props }) => {
       {!!currentImage && (
         /* @ts-ignore */
         <Lightbox
-          onImageLoad={(e) => console.log(e)}
           onAfterOpen={() => {}}
           mainSrc={currentImage.src}
           imageTitle={currentImage.caption}

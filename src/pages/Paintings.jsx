@@ -1,8 +1,9 @@
-import React, { useRef } from "react";
+import React, { useCallback, useRef } from "react";
 import { digitalDrawings, paintings } from "../components/Gallery/Images";
 import KikitoGallery from "../components/Gallery/KikitoGallery";
 const Paintings = () => {
-  const scrollContainerRef = useRef(null);
+  const scrollPaintingContainerRef = useRef(null);
+  const scrollDrawingContainerRef = useRef(null);
 
   // useEffect(() => {
   //   const handleWheel = (event) => {
@@ -65,6 +66,14 @@ const Paintings = () => {
   //   };
   // }, []);
 
+  const handleScroll = (direction, ref) => {
+    const scrollContainer = ref.current;
+    scrollContainer.scrollBy({
+      left: (direction === "left" ? -1 : 1) * 300,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="container">
       <h1>PEINTURES</h1>
@@ -74,11 +83,29 @@ const Paintings = () => {
         palette de couleurs à la fois vives et douces, le rose, l'orange, le
         bleu, le vert et le jaune sont les tons qui revienne le plus.
       </p>
-      <div
-        ref={scrollContainerRef}
-        className="kikito-gallery kikito-gallery-paintings"
-      >
-        <KikitoGallery images={paintings} />
+      <div className="display-flex-align-items-center">
+        <button
+          type="button"
+          style={{ left: "15%", top: "60%" }}
+          class="nav-button-gallery nav-button-gallery-prev"
+          aria-label="Previous image"
+          title="Previous image"
+          onClick={() => handleScroll("left", scrollPaintingContainerRef)}
+        ></button>
+        <div
+          ref={scrollPaintingContainerRef}
+          className="kikito-gallery kikito-gallery-paintings"
+        >
+          <KikitoGallery images={paintings} />
+        </div>
+        <button
+          type="button"
+          style={{ right: "15%", top: "60%" }}
+          class="nav-button-gallery nav-button-gallery-next"
+          aria-label="Previous image"
+          title="Previous image"
+          onClick={() => handleScroll("right", scrollPaintingContainerRef)}
+        ></button>
       </div>
       <div className="paintings-title">
         <div>
@@ -103,8 +130,29 @@ const Paintings = () => {
         Explorez mes créations en dessin numérique réaliser sur Photoshop et/ou
         Illustrator. Concepts de personnages, décors, affiches.
       </p>
-      <div className="kikito-gallery kikito-gallery-digital-drawings">
-        <KikitoGallery images={digitalDrawings} maxRows={2} />
+      <div className="display-flex-align-items-center">
+        <button
+          type="button"
+          style={{ left: "15%", top: "60%" }}
+          class="nav-button-gallery nav-button-gallery-prev"
+          aria-label="Previous image"
+          title="Previous image"
+          onClick={() => handleScroll("left", scrollDrawingContainerRef)}
+        ></button>
+        <div
+          ref={scrollDrawingContainerRef}
+          className="kikito-gallery kikito-gallery-digital-drawings"
+        >
+          <KikitoGallery images={digitalDrawings} maxRows={2} />
+        </div>
+        <button
+          type="button"
+          style={{ right: "15%", top: "60%" }}
+          class="nav-button-gallery nav-button-gallery-next"
+          aria-label="Previous image"
+          title="Previous image"
+          onClick={() => handleScroll("right", scrollDrawingContainerRef)}
+        ></button>
       </div>
     </div>
   );

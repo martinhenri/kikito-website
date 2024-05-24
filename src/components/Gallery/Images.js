@@ -15,6 +15,11 @@ export const paintings = [
     caption: "Imbibé",
   },
   {
+    src: "/paintings/venus-grenoble-associate.jpg",
+    original: "/paintings/venus-grenoble-associate.jpg",
+    caption: "Venus Grenoble",
+  },
+  {
     src: "/paintings/JimmyB.jpg",
     original: "/paintings/JimmyB.jpg",
     caption: "Jimmy B.",
@@ -28,11 +33,6 @@ export const paintings = [
     src: "/paintings/M.jpg",
     original: "/paintings/M.jpg",
     caption: "M.",
-  },
-  {
-    src: "/paintings/chartreuse-2-slip.png",
-    original: "/paintings/chartreuse-2-slip.png",
-    caption: "La chartreuse de slip",
   },
   {
     src: "/paintings/medusa.jpg",
@@ -65,6 +65,11 @@ export const paintings = [
     caption: "Imbibé",
   },
   {
+    src: "/paintings/chartreuse-2-slip.png",
+    original: "/paintings/chartreuse-2-slip.png",
+    caption: "La chartreuse de slip",
+  },
+  {
     src: "/paintings/RaccoonDance.jpg",
     original: "/paintings/RaccoonDance.jpg",
     caption: "Raccoon Dance",
@@ -83,11 +88,6 @@ export const paintings = [
     src: "/paintings/wall-painting.jpg",
     original: "/paintings/wall-painting.jpg",
     caption: "Wall painting",
-  },
-  {
-    src: "/paintings/venus-grenoble-associate.jpg",
-    original: "/paintings/venus-grenoble-associate.jpg",
-    caption: "Venus Grenoble",
   },
   {
     src: "/paintings/totaly.png",
@@ -188,5 +188,75 @@ export const digitalDrawings = [
   {
     src: "/digital-drawings/pré_turn.png",
     original: "/digital-drawings/pré_turn.png",
+  },
+];
+
+export const modelisations = [
+  {
+    src: "/modelisations/0000.jpg",
+    original: "/modelisations/0000.jpg",
+    caption: "Objet abstrait",
+    width: 220,
+  },
+  {
+    src: "/modelisations/CA3_BISCARAT_lea_musee.jpg",
+    original: "/modelisations/CA3_BISCARAT_lea_musee.jpg",
+    caption: "Bâtiment historique",
+  },
+  {
+    src: "/modelisations/CA3_BISCARAT_lea_r.jpg",
+    original: "/modelisations/CA3_BISCARAT_lea_r.jpg",
+    caption: "Bâtiment moderne",
+  },
+  {
+    src: "/modelisations/Gas_Station1.jpg",
+    original: "/modelisations/Gas_Station1.jpg",
+    caption: "Station-service vintage",
+  },
+  {
+    src: "/modelisations/Gas_Station2.jpg",
+    original: "/modelisations/Gas_Station2.jpg",
+    caption: "Station-service moderne",
+  },
+  {
+    src: "/modelisations/Gas_Station3.jpg",
+    original: "/modelisations/Gas_Station3.jpg",
+    caption: "Station-service futuriste",
+  },
+  {
+    src: "/modelisations/abeillebb.jpg",
+    original: "/modelisations/abeillebb.jpg",
+    caption: "Abeille en 3D",
+  },
+  {
+    src: "/modelisations/nature_morte01_02.jpg",
+    original: "/modelisations/nature_morte01_02.jpg",
+    caption: "Nature morte en 3D",
+  },
+  {
+    src: "/modelisations/nature_morte_02.jpg",
+    original: "/modelisations/nature_morte_02.jpg",
+    caption: "Nature morte en 3D (2)",
+  },
+  {
+    src: "/modelisations/nature_morte_oclusion.png",
+    original: "/modelisations/nature_morte_oclusion.png",
+    caption: "Nature morte occlusion",
+  },
+  {
+    src: "/modelisations/nature_morte_nuit.jpg",
+    original: "/modelisations/nature_morte_nuit.jpg",
+    caption: "Nature morte en 3D (nuit)",
+  },
+  {
+    src: "/modelisations/violon05.png",
+    original: "/modelisations/violon05.png",
+    caption: "Violon en 3D",
+    width: 444,
+  },
+  {
+    src: "/modelisations/nature_morte_oclusion.jpg",
+    original: "/modelisations/nature_morte_oclusion.jpg",
+    caption: "Nature morte occlusion",
   },
 ];

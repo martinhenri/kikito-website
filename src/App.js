@@ -10,7 +10,7 @@ import Navbar from "./components/Navbar";
 import About from "./pages/About";
 import Animation from "./pages/Animation";
 import Home from "./pages/Home";
-import Paintigns from "./pages/Paintings";
+import Paintings from "./pages/Paintings";
 import TreeD from "./pages/TreeD";
 
 function App() {
@@ -37,7 +37,7 @@ function AnimationApp() {
             <Routes location={location}>
               <Route exact path="/" element={<Home />} />
               <Route path="/3d" element={<TreeD />} />
-              <Route path="/paintings" element={<Paintigns />} />
+              <Route path="/paintings" element={<Paintings />} />
               <Route path="/animation" element={<Animation />} />
               <Route path="/about" element={<About />} />
             </Routes>

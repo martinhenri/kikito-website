@@ -1,10 +1,8 @@
+@import "./fonts/stylesheet.css";
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "guildford", sans-serif;
+  font-weight: 100;
 }
 
 code {
@@ -61,8 +59,20 @@ body {
   width: 2400px;
 }
 
-#ReactGridGallery img {
+/* TODO: handle images for React Grid Gallery paintings */
+.kikito-gallery-digital-drawings #ReactGridGallery img {
   height: 250px !important;
+}
+.kikito-gallery-paintings #ReactGridGallery img {
+  height: 250px !important;
+}
+
+.modelisation-gallery #ReactGridGallery img {
+  height: 15vw !important;
+}
+
+.modelisation-gallery #ReactGridGallery > div {
+  justify-content: center;
 }
 
 .ReactGridGallery_tile {
@@ -83,30 +93,24 @@ body {
   scrollbar-width: none; /* Firefox */
 }
 
-#ReactGridGallery > div {
+/* #ReactGridGallery > div {
   justify-content: space-between;
   padding: 20px;
   row-gap: 20px;
-}
+} */
 
-@font-face {
-  font-family: "Futura Light";
-  src: url("./fonts/FuturaLTLight.ttf") format("ttf"); /* Spécifiez le chemin vers votre fichier de police */
-  font-weight: normal;
-  font-style: normal;
-}
 h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-weight: 500;
+  /* TODO handle responsive font-size for title and there images */
+  /* font-size: 3vmin; */
 }
 p {
-  margin-top: 60px;
-  font-size: 18px;
-  font-family: fantasy;
-  margin-left: 4%;
-  margin-right: 4%;
+  font-size: 2vmin;
   text-align: justify;
 }
 
@@ -127,11 +131,14 @@ p {
 @media screen and (min-width: 980px) {
   .container {
     min-width: 980px;
+    width: 90%;
   }
 }
 
 .container {
   max-width: 980px;
+  padding-right: 4%;
+  padding-left: 4%;
   margin: 0 auto; /* Cette propriété auto applique une marge égale à gauche et à droite, centrée horizontalement */
 }
 
@@ -180,4 +187,32 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.nav-button-gallery {
+  border: none;
+  padding: 40px 30px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.nav-button-gallery-prev {
+  background: rgba(0, 0, 0, 0.2)
+    url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgd2lkdGg9IjIwIiBoZWlnaHQ9IjM0Ij48cGF0aCBkPSJtIDE5LDMgLTIsLTIgLTE2LDE2IDE2LDE2IDEsLTEgLTE1LC0xNSAxNSwtMTUgeiIgZmlsbD0iI0ZGRiIvPjwvc3ZnPg==)
+    no-repeat center;
+}
+.nav-button-gallery-next {
+  background: rgba(0, 0, 0, 0.2)
+    url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgd2lkdGg9IjIwIiBoZWlnaHQ9IjM0Ij48cGF0aCBkPSJtIDEsMyAyLC0yIDE2LDE2IC0xNiwxNiAtMSwtMSAxNSwtMTUgLTE1LC0xNSB6IiBmaWxsPSIjRkZGIi8+PC9zdmc+)
+    no-repeat center;
+}
+
+.nav-button-gallery:hover {
+  opacity: 1;
+}
+
+.legend {
+  margin-top: 0;
+  font-size: medium;
+  margin-bottom: 35px;
 }

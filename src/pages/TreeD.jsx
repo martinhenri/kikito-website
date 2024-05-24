@@ -1,5 +1,7 @@
 import React from "react";
 import ReactCompareImage from "react-compare-image";
+import KikitoGallery from "../components/Gallery/KikitoGallery";
+import { modelisation, modelisations } from "../components/Gallery/Images";
 
 const TreeD = () => {
   return (
@@ -40,7 +42,21 @@ const TreeD = () => {
           rightImage="/compare-images/after-2.jpeg"
         />
       </div>
-      <p>Lighting/compo projet Space Apéro</p>
+      <p className="legend mt-1">
+        <i>Lighting/compo projet Space Apéro</i>
+      </p>
+      <h1 className="pt-3">
+        <span>MODELISATION </span>
+        <img
+          className="align-self-center pl-1"
+          alt="Title maya icon"
+          src="/logos/logo-maya.png"
+          style={{ height: "30px" }}
+        />
+      </h1>
+      <div className="modelisation-gallery">
+        <KikitoGallery images={modelisations} />
+      </div>
     </div>
   );
 };

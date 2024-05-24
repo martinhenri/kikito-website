@@ -26,6 +26,16 @@
 .w-100 {
   width: 100%;
 }
+.w-30 {
+  width: 30%;
+}
+.w-32 {
+  width: 32%;
+}
+.w-25 {
+  width: 25%;
+}
+
 /* 
  * When developing please add reusable css class if necessary with the following pattern 
  *   .mt - margin top
@@ -56,6 +66,15 @@
 .justify-content-center {
   justify-content: center;
 }
+.justify-content-space-between {
+  justify-content: space-between;
+}
+.justify-content-space-evenly {
+  justify-content: space-evenly;
+}
+.justify-content-space-around {
+  justify-content: space-around;
+}
 
 .d-flex {
   display: flex;
@@ -80,7 +99,28 @@
 .mt-4 {
   margin-top: var(--spacing-4);
 }
+.mt-0 {
+  margin-top: 0;
+}
+
+.mb-1 {
+  margin-bottom: var(--spacing-1);
+}
+.mb-0 {
+  margin-bottom: 0;
+}
+.mb-2 {
+  margin-bottom: var(--spacing-2);
+}
 
 .pl-1 {
   padding-left: var(--spacing-1);
+}
+
+.pl-2 {
+  padding-left: var(--spacing-2);
+}
+
+.pt-3 {
+  padding-top: var(--spacing-3);
 }
