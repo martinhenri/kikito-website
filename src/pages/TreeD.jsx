@@ -28,6 +28,7 @@ const TreeD = () => {
         autoPlay
         mute
         controls
+        controlsList="nodownload"
         src="/videos/DEMO_LEA_BISCARAT_2023_H264.mp4"
       />
       <div className="mt-4">

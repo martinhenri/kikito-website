@@ -34,6 +34,7 @@ const Animation = () => {
         autoPlay
         mute
         controls
+        controlsList="nodownload"
         src="/videos/ANIM_ALLA_H264.mp4"
       />
       <h1 className="animation-header pt-3">
@@ -43,18 +44,21 @@ const Animation = () => {
         <video
           className="w-32"
           controls
+          controlsList="nodownload"
           src="/videos/histoire-objets-cuisine.mp4"
           poster="/preview/videoCouteau.png"
         />
         <video
           className="w-32"
           controls
+          controlsList="nodownload"
           src="/videos/histoire-objets-ecouteurs.mp4"
           poster="/preview/videoEcouteur.png"
         />
         <video
           className="w-32"
           controls
+          controlsList="nodownload"
           src="/videos/montagne-whouaou.mp4"
           poster="/preview/videoMontagne.png"
         />
@@ -65,6 +69,7 @@ const Animation = () => {
       <video
         className="w-100"
         controls
+        controlsList="nodownload"
         src="/videos/mariage-pri.mp4"
         poster="/preview/videoPri.png"
       />
@@ -77,6 +82,7 @@ const Animation = () => {
       <video
         className="w-100"
         controls
+        controlsList="nodownload"
         src="/videos/mariage-anais.mp4"
         poster="/preview/videoAnais.png"
       />
@@ -87,7 +93,12 @@ const Animation = () => {
       <h1 className="animation-header">
         <span>FICTION </span>
       </h1>
-      <video className="w-100" controls src="/videos/crazy-potter.mp4" />
+      <video
+        className="w-100"
+        controls
+        controlsList="nodownload"
+        src="/videos/crazy-potter.mp4"
+      />
     </div>
   );
 };
