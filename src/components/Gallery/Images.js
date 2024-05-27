@@ -188,8 +188,8 @@ export const digitalDrawings = [
   },
 
   {
-    src: "/digital-drawings/pré_turn.png",
-    original: "/digital-drawings/pré_turn.png",
+    src: "/digital-drawings/pre_turn.png",
+    original: "/digital-drawings/pre_turn.png",
   },
 ];
 
