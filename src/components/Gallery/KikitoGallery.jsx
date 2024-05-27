@@ -26,7 +26,6 @@ const ImageComponent = (props) => {
       <img
         {...props.imageProps}
         alt={props.imageProps.caption}
-        loading="lazy"
         onLoad={handleLoad}
         onError={handleError}
         style={{ display: isLoaded ? "block" : "none" }}
