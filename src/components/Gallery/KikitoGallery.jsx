@@ -72,7 +72,7 @@ const KikitoGallery = ({ images = [], ...props }) => {
       <Gallery
         images={finalesImages}
         onClick={handleClick}
-        thumbnailImageComponent={ImageComponent}
+        thumbnailImageComponent={props.enableLoading ? ImageComponent : null}
         enableImageSelection={false}
         margin={0}
       />

@@ -96,7 +96,7 @@ const Paintings = () => {
           ref={scrollPaintingContainerRef}
           className="kikito-gallery kikito-gallery-paintings"
         >
-          <KikitoGallery images={paintings} />
+          <KikitoGallery images={paintings} enableLoading />
         </div>
         <button
           type="button"
@@ -142,7 +142,7 @@ const Paintings = () => {
           ref={scrollDrawingContainerRef}
           className="kikito-gallery kikito-gallery-digital-drawings"
         >
-          <KikitoGallery images={digitalDrawings} maxRows={2} />
+          <KikitoGallery images={digitalDrawings} maxRows={2} enableLoading />
         </div>
         <button
           type="button"
