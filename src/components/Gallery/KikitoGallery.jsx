@@ -3,6 +3,37 @@ import { Gallery } from "react-grid-gallery";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
 
+const ImageComponent = (props) => {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  const handleLoad = (e) => {
+    setIsLoaded(true);
+  };
+
+  const handleError = () => {
+    setIsLoaded(true);
+  };
+  return (
+    <>
+      {!isLoaded && (
+        // Render the loader here
+        <div class="loader">
+          <div class="card__loader">
+            <div class="card__image__loader"></div>
+          </div>
+        </div>
+      )}
+      <img
+        {...props.imageProps}
+        alt={props.imageProps.caption}
+        loading="lazy"
+        onLoad={handleLoad}
+        onError={handleError}
+        style={{ display: isLoaded ? "block" : "none" }}
+      />
+    </>
+  );
+};
 const KikitoGallery = ({ images = [], ...props }) => {
   const [index, setIndex] = useState(-1);
 
@@ -41,12 +72,14 @@ const KikitoGallery = ({ images = [], ...props }) => {
       <Gallery
         images={finalesImages}
         onClick={handleClick}
+        thumbnailImageComponent={ImageComponent}
         enableImageSelection={false}
         margin={0}
       />
       {!!currentImage && (
         /* @ts-ignore */
         <Lightbox
+          onImageLoad={() => {}}
           onAfterOpen={() => {}}
           mainSrc={currentImage.src}
           imageTitle={currentImage.caption}

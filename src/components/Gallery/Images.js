@@ -3,6 +3,7 @@ export const paintings = [
     src: "/paintings/BarDesPtiChats.jpg",
     original: "/paintings/BarDesPtiChats.jpg",
     caption: "Bar des P'tits chats",
+    width: 185.3,
   },
   {
     src: "/paintings/cibuste.png",
@@ -23,6 +24,7 @@ export const paintings = [
     src: "/paintings/JimmyB.jpg",
     original: "/paintings/JimmyB.jpg",
     caption: "Jimmy B.",
+    width: 187.53,
   },
   {
     src: "/paintings/kobe.png",

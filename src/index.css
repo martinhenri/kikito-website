@@ -222,3 +222,30 @@ p {
     font-size: 2.5vmin !important;
   }
 }
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__loader {
+  width: 250px;
+  background: #ffffff00;
+}
+
+@keyframes shine {
+  to {
+    background-position-x: -200%;
+  }
+}
+
+.card__image__loader {
+  background: linear-gradient(110deg, #252525 8%, #3a3a3a 18%, #252525 33%);
+  background-size: 200% 100%;
+  animation: 1s shine linear infinite;
+}
+
+.card__image__loader {
+  height: 250px;
+}

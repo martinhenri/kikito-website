@@ -1,4 +1,4 @@
-import React, { useCallback, useRef } from "react";
+import React, { useRef } from "react";
 import { digitalDrawings, paintings } from "../components/Gallery/Images";
 import KikitoGallery from "../components/Gallery/KikitoGallery";
 const Paintings = () => {
