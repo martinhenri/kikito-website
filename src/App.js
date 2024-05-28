@@ -13,12 +13,14 @@ import Animation from "./pages/Animation";
 import Home from "./pages/Home";
 import Paintings from "./pages/Paintings";
 import TreeD from "./pages/TreeD";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
   return (
     <Router>
       <AnimationApp />
       <Analytics />
+      <SpeedInsights />
     </Router>
   );
 }
