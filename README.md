@@ -10,15 +10,13 @@ Artistic direction :
 - dark backgrounds / white font
 ## Development
 ### Next feature / TODO
-- Fix ugly loading for reactGridLibrary in Paintings part :
-  - Use lazy loading 
-  - Display loader
-  - Change librairy for 
+- Media control (prevent visitors from downloading resources)
+  - Using Vercel Blop to store and stream videos 
 - Improve responsive :
   - font-size 
   - title
-- Media control (prevent visitors from downloading resources)
-- Reorganize / use carousel for videos in Animation page (to much on the same page)
+- Reorganize / use carousel for videos in Animation page (to much on the same page) ?
+
 ### Branches
 Usage of branch for new feature from main and using rebase to keep git history clean.
 ### Commit 
