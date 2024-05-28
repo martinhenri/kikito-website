@@ -11,7 +11,7 @@ const TreeD = () => {
         <img
           className="align-self-center"
           alt="Title icon"
-          src="/logos/icn-nuke.png"
+          src="/logos/icn-nuke.webp"
         />
       </h1>
       <p>
@@ -33,14 +33,14 @@ const TreeD = () => {
       />
       <div className="mt-4">
         <ReactCompareImage
-          leftImage="/compare-images/before-1.png"
-          rightImage="/compare-images/after-1.png"
+          leftImage="/compare-images/before-1.webp"
+          rightImage="/compare-images/after-1.webp"
         />
-      </div>{" "}
+      </div>
       <div className="mt-4">
         <ReactCompareImage
-          leftImage="/compare-images/before-2.jpeg"
-          rightImage="/compare-images/after-2.jpeg"
+          leftImage="/compare-images/before-2.webp"
+          rightImage="/compare-images/after-2.webp"
         />
       </div>
       <p className="legend mt-1">
@@ -51,7 +51,7 @@ const TreeD = () => {
         <img
           className="align-self-center pl-1"
           alt="Title maya icon"
-          src="/logos/logo-maya.png"
+          src="/logos/logo-maya.webp"
           style={{ height: "30px" }}
         />
       </h1>

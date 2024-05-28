@@ -112,12 +112,12 @@ const Paintings = () => {
           <h1>
             <pan>DESSINS NUMERIQUES </pan>
             <img
-              src="/logos/adobe-photoshop-logo-0.png"
+              src="/logos/adobe-photoshop-logo-0.webp"
               style={{ width: "40px", height: "40px", marginLeft: "30px" }}
               alt="photoshop-logo"
             />
             <img
-              src="/logos/illustrator-icon-new.png"
+              src="/logos/illustrator-icon-new.webp"
               style={{ width: "30px", height: "30px" }}
               alt="illustrator-logo"
             />

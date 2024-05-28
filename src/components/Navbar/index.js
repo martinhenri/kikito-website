@@ -6,7 +6,7 @@ const Navbar = () => {
     <>
       <div id="menu">
         <div>
-          <img id="menu-logo" src="/logos/raccoon.png" alt="Logo" />
+          <img id="menu-logo" src="/logos/raccoon.webp" alt="Logo" />
         </div>
         <Nav>
           <NavMenu>
