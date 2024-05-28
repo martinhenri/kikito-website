@@ -249,3 +249,15 @@ p {
 .card__image__loader {
   height: 250px;
 }
+
+.contact {
+  margin-top: 50px;
+}
+.contact a {
+  height: 100%;
+}
+.contact-icon-container {
+  img {
+    height: 4vmin;
+  }
+}

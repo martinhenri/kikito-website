@@ -4,6 +4,7 @@
   --primary-font: "Roboto", sans-serif;
   --secondary-font: "Open Sans", sans-serif;
 
+  --spacing-05: 0.5rem;
   --spacing-1: 1rem;
   --spacing-2: 2rem;
   --spacing-3: 3rem;
@@ -87,6 +88,9 @@
   margin: var(--spacing-2);
 }
 
+.mt-05 {
+  margin-top: var(--spacing-05);
+}
 .mt-1 {
   margin-top: var(--spacing-1);
 }
@@ -130,4 +134,8 @@
 
 .pt-3 {
   padding-top: var(--spacing-3);
+}
+
+.gap-1 {
+  gap: var(--spacing-1);
 }

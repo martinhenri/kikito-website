@@ -35,6 +35,28 @@ const About = () => {
           </p>
         </div>
       </div>
+      <div className="contact mt-2 mb-2">
+        <span className="display-flex-align-items-center">CONTACT</span>
+        <div className="d-flex gap-1 contact-icon-container mt-05">
+          <a
+            href="https://www.linkedin.com/in/l%C3%A9a-biscarat-b045aa133/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <img src="/logos/linkedin.webp" alt="linkedin icon" />
+          </a>
+          <a href="mailto:biscaratlea@gmail.com">
+            <img src="/logos/gmail.webp" alt="gmail icon" />
+          </a>
+          <a
+            href="https://www.instagram.com/leabis_l.p.c"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <img src="/logos/instagram.webp" />
+          </a>
+        </div>
+      </div>
     </div>
   );
 };
