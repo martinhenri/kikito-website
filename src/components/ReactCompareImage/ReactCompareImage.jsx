@@ -30,6 +30,8 @@ const ReactCompareImage = (props) => {
   );
   const [containerWidth, setContainerWidth] = useState(0);
   const [containerHeight, setContainerHeight] = useState(0);
+  const [loadingContainerHeight, setLoadingContainerHeight] = useState(0);
+
   const [leftImgLoaded, setLeftImgLoaded] = useState(false);
   const [rightImgLoaded, setRightImgLoaded] = useState(false);
   const [isSliding, setIsSliding] = useState(false);
@@ -46,7 +48,6 @@ const ReactCompareImage = (props) => {
       setContainerWidth(currentContainerWidth);
     });
     resizeObserver.observe(containerElement);
-
     return () => resizeObserver.disconnect();
   }, []);
 
@@ -338,6 +339,18 @@ const ReactCompareImage = (props) => {
     },
   };
 
+  const handleLoad = (event) => {
+    // calc and set the container's size to load the skeleton correctly
+    const imageWidthHeightRatio =
+      event.target.naturalHeight / event.target.naturalWidth;
+    console.log("imageWidthHeightRatio", imageWidthHeightRatio);
+    console.log("event", event);
+    const idealContainerHeight =
+      containerRef.current.offsetWidth * imageWidthHeightRatio;
+    console.log("containerRef.current.width", containerRef.current.offsetWidth);
+    console.log("idealContainerHeight", idealContainerHeight);
+    setLoadingContainerHeight(idealContainerHeight);
+  };
   return (
     <>
       {skeleton && !allImagesLoaded && (
@@ -345,23 +358,26 @@ const ReactCompareImage = (props) => {
           style={{
             ...styles.container,
             overflow: "visible",
-            height: skeleton.containerHeight || "auto",
+            height: `${loadingContainerHeight}px`,
           }}
         >
-          {skeleton?.node || <div>Loading...</div>}
+          {skeleton || <div>Loading...</div>}
         </div>
       )}
 
       <div
         style={{
           ...styles.container,
-          display: allImagesLoaded ? "block" : "none",
+          display: !allImagesLoaded && !skeleton ? "none" : "block",
         }}
         ref={containerRef}
         data-testid="container"
       >
         <img
-          onLoad={() => setRightImgLoaded(true)}
+          onLoad={(event) => {
+            setRightImgLoaded(true);
+            handleLoad(event);
+          }}
           alt={rightImageAlt}
           data-testid="right-image"
           ref={rightImageRef}
@@ -369,8 +385,11 @@ const ReactCompareImage = (props) => {
           style={styles.rightImage}
         />
         <img
-          onLoad={() => setLeftImgLoaded(true)}
           alt={leftImageAlt}
+          onLoad={(event) => {
+            setLeftImgLoaded(true);
+            handleLoad(event);
+          }}
           data-testid="left-image"
           ref={leftImageRef}
           src={leftImage}

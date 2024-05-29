@@ -3,16 +3,14 @@ import KikitoGallery from "../components/Gallery/KikitoGallery";
 import { modelisations } from "../components/Gallery/Images";
 import ReactCompareImage from "../components/ReactCompareImage/ReactCompareImage";
 const TreeD = () => {
-  const skeleton = {
-    containerHeight: "410px",
-    node: (
-      <div class="loader compare-image-loader">
-        <div class="image__loader">
-          <div class="child__image__loader"></div>
-        </div>
+  const skeleton = (
+    <div class="loader compare-image-loader">
+      <div class="image__loader">
+        <div class="child__image__loader"></div>
       </div>
-    ),
-  };
+    </div>
+  );
+
   return (
     <div className="container">
       <h1>
