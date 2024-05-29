@@ -228,9 +228,21 @@ p {
   justify-content: center;
   align-items: center;
 }
+.compare-image-loader {
+  height: 100%;
+}
+
+.compare-image-loader * {
+  height: 100%;
+}
 
 .card__loader {
   width: 250px;
+  background: #ffffff00;
+}
+
+.image__loader {
+  width: 100%;
   background: #ffffff00;
 }
 
@@ -240,13 +252,18 @@ p {
   }
 }
 
-.card__image__loader {
+.child__image__loader {
   background: linear-gradient(110deg, #252525 8%, #3a3a3a 18%, #252525 33%);
   background-size: 200% 100%;
-  animation: 1s shine linear infinite;
+  animation: 1.5s shine linear infinite;
 }
 
-.card__image__loader {
+.compare-image-loader .child__image__loader {
+  height: 100%;
+  border-radius: 5px;
+}
+
+.card__loader .child__image__loader {
   height: 250px;
 }
 

@@ -1,9 +1,18 @@
 import React from "react";
-import ReactCompareImage from "react-compare-image";
 import KikitoGallery from "../components/Gallery/KikitoGallery";
-import { modelisation, modelisations } from "../components/Gallery/Images";
-
+import { modelisations } from "../components/Gallery/Images";
+import ReactCompareImage from "../components/ReactCompareImage/ReactCompareImage";
 const TreeD = () => {
+  const skeleton = {
+    containerHeight: "410px",
+    node: (
+      <div class="loader compare-image-loader">
+        <div class="image__loader">
+          <div class="child__image__loader"></div>
+        </div>
+      </div>
+    ),
+  };
   return (
     <div className="container">
       <h1>
@@ -33,14 +42,16 @@ const TreeD = () => {
       />
       <div className="mt-4">
         <ReactCompareImage
-          leftImage="/compare-images/before-1.webp"
-          rightImage="/compare-images/after-1.webp"
+          leftImage="/compare-images/before-1.png"
+          rightImage="/compare-images/after-1.png"
+          skeleton={skeleton}
         />
       </div>
       <div className="mt-4">
         <ReactCompareImage
-          leftImage="/compare-images/before-2.webp"
-          rightImage="/compare-images/after-2.webp"
+          leftImage="/compare-images/before-2.jpeg"
+          rightImage="/compare-images/after-2.jpeg"
+          skeleton={skeleton}
         />
       </div>
       <p className="legend mt-1">

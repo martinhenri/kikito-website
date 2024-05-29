@@ -12,6 +12,10 @@ Artistic direction :
 ### Next feature / TODO
 - Media control (prevent visitors from downloading resources)
   - Using Vercel Blop to store and stream videos 
+- improve SEO
+  - adding sitemap
+  - migrate to Next.js
+- Use high quality image on Lightbox in and low quality images in Gallery preview
 - Improve responsive :
   - font-size 
   - title

@@ -19,7 +19,7 @@ const ImageComponent = (props) => {
         // Render the loader here
         <div class="loader">
           <div class="card__loader">
-            <div class="card__image__loader"></div>
+            <div class="child__image__loader"></div>
           </div>
         </div>
       )}
