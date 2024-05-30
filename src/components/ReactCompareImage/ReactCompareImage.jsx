@@ -46,6 +46,8 @@ const ReactCompareImage = (props) => {
     const resizeObserver = new ResizeObserver(([entry, ..._]) => {
       const currentContainerWidth = entry.target.getBoundingClientRect().width;
       setContainerWidth(currentContainerWidth);
+      // we use this component with image with this ratio
+      setLoadingContainerHeight(currentContainerWidth * 0.41836734693877553);
     });
     resizeObserver.observe(containerElement);
     return () => resizeObserver.disconnect();
@@ -339,18 +341,6 @@ const ReactCompareImage = (props) => {
     },
   };
 
-  const handleLoad = (event) => {
-    // calc and set the container's size to load the skeleton correctly
-    const imageWidthHeightRatio =
-      event.target.naturalHeight / event.target.naturalWidth;
-    console.log("imageWidthHeightRatio", imageWidthHeightRatio);
-    console.log("event", event);
-    const idealContainerHeight =
-      containerRef.current.offsetWidth * imageWidthHeightRatio;
-    console.log("containerRef.current.width", containerRef.current.offsetWidth);
-    console.log("idealContainerHeight", idealContainerHeight);
-    setLoadingContainerHeight(idealContainerHeight);
-  };
   return (
     <>
       {skeleton && !allImagesLoaded && (
@@ -368,7 +358,7 @@ const ReactCompareImage = (props) => {
       <div
         style={{
           ...styles.container,
-          display: !allImagesLoaded && !skeleton ? "none" : "block",
+          display: "block",
         }}
         ref={containerRef}
         data-testid="container"
@@ -376,7 +366,6 @@ const ReactCompareImage = (props) => {
         <img
           onLoad={(event) => {
             setRightImgLoaded(true);
-            handleLoad(event);
           }}
           alt={rightImageAlt}
           data-testid="right-image"
@@ -388,7 +377,6 @@ const ReactCompareImage = (props) => {
           alt={leftImageAlt}
           onLoad={(event) => {
             setLeftImgLoaded(true);
-            handleLoad(event);
           }}
           data-testid="left-image"
           ref={leftImageRef}
