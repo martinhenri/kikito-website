@@ -52,9 +52,31 @@ body {
 /* TODO: handle images for React Grid Gallery paintings */
 .kikito-gallery-digital-drawings #ReactGridGallery img {
   height: 250px !important;
+  cursor: pointer;
 }
 .kikito-gallery-paintings #ReactGridGallery img {
   height: 250px !important;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 980px) {
+  :root {
+    --img-height: 25vw;
+  }
+
+  .kikito-gallery-paintings #ReactGridGallery img,
+  .kikito-gallery-digital-drawings #ReactGridGallery img {
+    height: var(--img-height) !important;
+    cursor: pointer;
+  }
+
+  .kikito-gallery-paintings #ReactGridGallery {
+    width: calc(var(--img-height) * 6.4); /* 6,4 */
+  }
+
+  .kikito-gallery-digital-drawings #ReactGridGallery {
+    width: calc(var(--img-height) * 9.6); /* 9,6 */
+  }
 }
 
 @media screen and (max-width: 980px) {
