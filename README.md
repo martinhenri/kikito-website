@@ -15,10 +15,6 @@ Artistic direction :
 - improve SEO
   - adding sitemap
   - migrate to Next.js
-- Use high quality image on Lightbox in and low quality images in Gallery preview
-- Improve responsive :
-  - font-size 
-  - title
 - Reorganize / use carousel for videos in Animation page (to much on the same page) ?
 
 ### Branches

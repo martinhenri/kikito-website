@@ -77,6 +77,11 @@ body {
   .kikito-gallery-digital-drawings #ReactGridGallery {
     width: calc(var(--img-height) * 9.6); /* 9,6 */
   }
+
+  .nav-button-gallery {
+    padding: 5vw !important;
+    background-size: 3.5vw !important;
+  }
 }
 
 @media screen and (max-width: 980px) {
