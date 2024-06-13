@@ -36,7 +36,7 @@ const TreeD = () => {
         mute
         controls
         controlsList="nodownload"
-        src="/videos/DEMO_LEA_BISCARAT_2023_H264.mp4"
+        src="/videos/DEMO_SITE_H264.mp4"
       />
       <div className="mt-4">
         <ReactCompareImage
