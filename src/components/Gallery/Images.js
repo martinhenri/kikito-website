@@ -1,195 +1,340 @@
+export const posters = [
+  {
+    src: "/posters/Chartreuse.webp",
+    original: "/posters/Chartreuse.webp",
+    caption: "Chartreuse",
+  },
+  {
+    src: "/posters/HeyJoe02.webp",
+    original: "/posters/HeyJoe02.webp",
+    caption: "HeyJoe02",
+  },
+  {
+    src: "/posters/Imbiber.webp",
+    original: "/posters/Imbiber.webp",
+    caption: "Imbiber",
+  },
+  {
+    src: "/posters/ImbiberAffiche.webp",
+    original: "/posters/ImbiberAffiche.webp",
+    caption: "ImbiberAffiche",
+  },
+  {
+    src: "/posters/JimmyB.webp",
+    original: "/posters/JimmyB.webp",
+    caption: "JimmyB",
+  },
+  {
+    src: "/posters/JimmyBaffiche.webp",
+    original: "/posters/JimmyBaffiche.webp",
+    caption: "JimmyBaffiche",
+  },
+  {
+    src: "/posters/Lakers.webp",
+    original: "/posters/Lakers.webp",
+    caption: "Lakers",
+  },
+  {
+    src: "/posters/MedusaJaune.webp",
+    original: "/posters/MedusaJaune.webp",
+    caption: "MedusaJaune",
+  },
+  {
+    src: "/posters/RaquetGang.webp",
+    original: "/posters/RaquetGang.webp",
+    caption: "RaquetGang",
+  },
+  {
+    src: "/posters/Singe01.webp",
+    original: "/posters/Singe01.webp",
+    caption: "Singe01",
+  },
+  {
+    src: "/posters/TheseLea.webp",
+    original: "/posters/TheseLea.webp",
+    caption: "TheseLea",
+  },
+  {
+    src: "/posters/heyJoe.webp",
+    original: "/posters/heyJoe.webp",
+    caption: "heyJoe",
+  },
+  {
+    src: "/posters/medusaAffiche.webp",
+    original: "/posters/medusaAffiche.webp",
+    caption: "medusaAffiche",
+  },
+  {
+    src: "/posters/singeAffiche.webp",
+    original: "/posters/singeAffiche.webp",
+    caption: "singeAffiche",
+  },
+];
+
+export const concepts = [
+  {
+    src: "/concepts/7_ville02.webp",
+    original: "/concepts/7_ville02.webp",
+    caption: "7_ville02",
+  },
+  {
+    src: "/concepts/9_Yael_graphique01.webp",
+    original: "/concepts/9_Yael_graphique01.webp",
+    caption: "9_Yael_graphique01",
+  },
+  {
+    src: "/concepts/9_Yael_graphique02.webp",
+    original: "/concepts/9_Yael_graphique02.webp",
+    caption: "9_Yael_graphique02",
+  },
+  {
+    src: "/concepts/CharaleaPri.webp",
+    original: "/concepts/CharaleaPri.webp",
+    caption: "CharaleaPri",
+  },
+  {
+    src: "/concepts/Classe.webp",
+    original: "/concepts/Classe.webp",
+    caption: "Classe",
+  },
+  {
+    src: "/concepts/DecorPrimaire.webp",
+    original: "/concepts/DecorPrimaire.webp",
+    caption: "DecorPrimaire",
+  },
+  {
+    src: "/concepts/GareGRENOBLE.webp",
+    original: "/concepts/GareGRENOBLE.webp",
+    caption: "GareGRENOBLE",
+  },
+  {
+    src: "/concepts/Illustration_bedroom.webp",
+    original: "/concepts/Illustration_bedroom.webp",
+    caption: "Illustration_bedroom",
+  },
+  {
+    src: "/concepts/Personnages.webp",
+    original: "/concepts/Personnages.webp",
+    caption: "Personnages",
+  },
+  {
+    src: "/concepts/Plage.webp",
+    original: "/concepts/Plage.webp",
+    caption: "Plage",
+  },
+  {
+    src: "/concepts/attitude02.webp",
+    original: "/concepts/attitude02.webp",
+    caption: "attitude02",
+  },
+  {
+    src: "/concepts/attitude03.webp",
+    original: "/concepts/attitude03.webp",
+    caption: "attitude03",
+  },
+  {
+    src: "/concepts/attitude04.webp",
+    original: "/concepts/attitude04.webp",
+    caption: "attitude04",
+  },
+  {
+    src: "/concepts/attitude_super_vilain.webp",
+    original: "/concepts/attitude_super_vilain.webp",
+    caption: "attitude_super_vilain",
+  },
+  {
+    src: "/concepts/expression diana.webp",
+    original: "/concepts/expression diana.webp",
+    caption: "expression diana",
+  },
+  {
+    src: "/concepts/expression_petit.webp",
+    original: "/concepts/expression_petit.webp",
+    caption: "expression_petit",
+  },
+  {
+    src: "/concepts/image0001.webp",
+    original: "/concepts/image0001.webp",
+    caption: "image0001",
+  },
+  {
+    src: "/concepts/lineup.webp",
+    original: "/concepts/lineup.webp",
+    caption: "lineup",
+  },
+  {
+    src: "/concepts/persoenpidhai.webp",
+    original: "/concepts/persoenpidhai.webp",
+    caption: "persoenpidhai",
+  },
+  {
+    src: "/concepts/pre_turn.webp",
+    original: "/concepts/pre_turn.webp",
+    caption: "pre_turn",
+  },
+  {
+    src: "/concepts/premierePage.webp",
+    original: "/concepts/premierePage.webp",
+    caption: "premierePage",
+  },
+  {
+    src: "/concepts/turn.webp",
+    original: "/concepts/turn.webp",
+    caption: "turn",
+  },
+  {
+    src: "/concepts/turn_tetess.webp",
+    original: "/concepts/turn_tetess.webp",
+    caption: "turn_tetess",
+  },
+  {
+    src: "/concepts/vueintsaloon.webp",
+    original: "/concepts/vueintsaloon.webp",
+    caption: "vueintsaloon",
+  },
+  {
+    src: "/concepts/wonder.webp",
+    original: "/concepts/wonder.webp",
+    caption: "wonder",
+  },
+];
 export const paintings = [
   {
-    src: "/paintings/BarDesPtiChats.webp",
-    original: "/paintings/BarDesPtiChats.webp",
-    caption: "Bar des P'tits chats",
-    width: 185.3,
+    src: "/paintings/20230614_141715.webp",
+    original: "/paintings/20230614_141715.webp",
+    caption: "20230614_141715",
   },
   {
-    src: "/paintings/cibuste.webp",
-    original: "/paintings/cibuste.webp",
+    src: "/paintings/Cibuste.webp",
+    original: "/paintings/Cibuste.webp",
     caption: "Cibuste",
-  },
-  {
-    src: "/paintings/imbiber.webp",
-    original: "/paintings/imbiber.webp",
-    caption: "Imbibé",
-  },
-  {
-    src: "/paintings/venus-grenoble-associate.webp",
-    original: "/paintings/venus-grenoble-associate.webp",
-    caption: "Venus Grenoble",
-  },
-  {
-    src: "/paintings/JimmyB.webp",
-    original: "/paintings/JimmyB.webp",
-    caption: "Jimmy B.",
-    width: 187.53,
-  },
-  {
-    src: "/paintings/kobe.webp",
-    original: "/paintings/kobe.webp",
-    caption: "Heros",
-  },
-  {
-    src: "/paintings/M.webp",
-    original: "/paintings/M.webp",
-    caption: "M.",
   },
   {
     src: "/paintings/medusa.webp",
     original: "/paintings/medusa.webp",
-    caption: "M.2",
+    caption: "medusa",
   },
   {
     src: "/paintings/miseEnscene.webp",
     original: "/paintings/miseEnscene.webp",
-    caption: "Cibuste",
+    caption: "miseEnscene",
   },
   {
     src: "/paintings/miseEnscene2.webp",
     original: "/paintings/miseEnscene2.webp",
-    caption: "Cat & Climb",
-  },
-  {
-    src: "/paintings/chartreuse-de-slip.webp",
-    original: "/paintings/chartreuse-2-slip.webp",
-    caption: "La chartreuse de slip",
+    caption: "miseEnscene2",
   },
   {
     src: "/paintings/miseEnscene3.webp",
     original: "/paintings/miseEnscene3.webp",
-    caption: "Cat & Climb",
+    caption: "miseEnscene3",
   },
   {
-    src: "/paintings/imbiber1.webp",
-    original: "/paintings/imbiber1.webp",
-    caption: "Imbibé",
+    src: "/paintings/miseEnscenecibuste.webp",
+    original: "/paintings/miseEnscenecibuste.webp",
+    caption: "miseEnscenecibuste",
   },
   {
-    src: "/paintings/chartreuse-2-slip.webp",
-    original: "/paintings/chartreuse-2-slip.webp",
-    caption: "La chartreuse de slip",
-  },
-  {
-    src: "/paintings/RaccoonDance.webp",
-    original: "/paintings/RaccoonDance.webp",
-    caption: "Raccoon Dance",
-  },
-  {
-    src: "/paintings/toile01.webp",
-    original: "/paintings/toile01.webp",
-    caption: "Safe place",
+    src: "/paintings/peintureMurale.webp",
+    original: "/paintings/peintureMurale.webp",
+    caption: "peintureMurale",
   },
   {
     src: "/paintings/petitchat2.webp",
     original: "/paintings/petitchat2.webp",
-    caption: "Le pommeau de José",
+    caption: "petitchat2",
   },
   {
-    src: "/paintings/wall-painting.webp",
-    original: "/paintings/wall-painting.webp",
-    caption: "Wall painting",
+    src: "/paintings/racoon.webp",
+    original: "/paintings/racoon.webp",
+    caption: "racoon",
+  },
+  {
+    src: "/paintings/toile01.webp",
+    original: "/paintings/toile01.webp",
+    caption: "toile01",
+  },
+  {
+    src: "/paintings/toile03.webp",
+    original: "/paintings/toile03.webp",
+    caption: "toile03",
   },
   {
     src: "/paintings/totaly.webp",
     original: "/paintings/totaly.webp",
-    caption: "Cat & Climb",
+    caption: "totaly",
   },
 ];
-
-export const digitalDrawings = [
+export const customs = [
   {
-    src: "/digital-drawings/these-illustration.webp",
-    original: "/digital-drawings/these-illustration.webp",
-    caption: "Illustration de thèse",
+    src: "/custom/02.webp",
+    original: "/custom/02.webp",
+    caption: "02",
   },
   {
-    src: "/digital-drawings/sister-love.webp",
-    original: "/digital-drawings/sister-love.webp",
-    caption: "Sister Love",
+    src: "/custom/Arthur01.webp",
+    original: "/custom/Arthur01.webp",
+    caption: "Arthur01",
   },
   {
-    src: "/digital-drawings/concept2.webp",
-    original: "/digital-drawings/concept2.webp",
-    caption: " VeloBoy",
+    src: "/custom/Arthur03(1).webp",
+    original: "/custom/Arthur03(1).webp",
+    caption: "Arthur03(1)",
   },
   {
-    src: "/digital-drawings/hey-joe.webp",
-    original: "/digital-drawings/hey-joe.webp",
-    caption: "Hey Joe Music",
+    src: "/custom/Arthur03.webp",
+    original: "/custom/Arthur03.webp",
+    caption: "Arthur03",
   },
   {
-    src: "/digital-drawings/5Plan de travail 1.webp",
-    original: "/digital-drawings/5Plan de travail 1.webp",
-    caption: "Jimmy B.2",
+    src: "/custom/LUNAinsta.webp",
+    original: "/custom/LUNAinsta.webp",
+    caption: "LUNAinsta",
   },
   {
-    src: "/digital-drawings/RaquetGang.webp",
-    original: "/digital-drawings/RaquetGang.webp",
-    caption: "RaquetGang",
+    src: "/custom/Lapin.webp",
+    original: "/custom/Lapin.webp",
+    caption: "Lapin",
   },
   {
-    src: "/digital-drawings/vueintsaloon.webp",
-    original: "/digital-drawings/vueintsaloon.webp",
+    src: "/custom/Liliane.webp",
+    original: "/custom/Liliane.webp",
+    caption: "Liliane",
   },
   {
-    src: "/digital-drawings/Illustration_bedroom.webp",
-    original: "/digital-drawings/Illustration_bedroom.webp",
-  },
-
-  {
-    src: "/digital-drawings/lineup.webp",
-    original: "/digital-drawings/lineup.webp",
+    src: "/custom/TempetoImpression.webp",
+    original: "/custom/TempetoImpression.webp",
+    caption: "TempetoImpression",
   },
   {
-    src: "/digital-drawings/expression diana.webp",
-    original: "/digital-drawings/expression diana.webp",
-    caption: "expression diana",
+    src: "/custom/jeu.webp",
+    original: "/custom/jeu.webp",
+    caption: "jeu",
   },
   {
-    src: "/digital-drawings/turn_tetess.webp",
-    original: "/digital-drawings/turn_tetess.webp",
+    src: "/custom/luna.webp",
+    original: "/custom/luna.webp",
+    caption: "luna",
   },
   {
-    src: "/digital-drawings/persoenpidhai.webp",
-    original: "/digital-drawings/persoenpidhai.webp",
-  },
-
-  {
-    src: "/digital-drawings/wonder.webp",
-    original: "/digital-drawings/wonder.webp",
+    src: "/custom/mochup05_001.webp",
+    original: "/custom/mochup05_001.webp",
+    caption: "mochup05_001",
   },
   {
-    src: "/digital-drawings/turn.webp",
-    original: "/digital-drawings/turn.webp",
-  },
-
-  {
-    src: "/digital-drawings/attitude02.webp",
-    original: "/digital-drawings/attitude02.webp",
+    src: "/custom/sister.webp",
+    original: "/custom/sister.webp",
+    caption: "sister",
   },
   {
-    src: "/digital-drawings/attitude03.webp",
-    original: "/digital-drawings/attitude03.webp",
+    src: "/custom/slip.webp",
+    original: "/custom/slip.webp",
+    caption: "slip",
   },
   {
-    src: "/digital-drawings/attitude04.webp",
-    original: "/digital-drawings/attitude04.webp",
-  },
-  {
-    src: "/digital-drawings/attitude_super_vilain.webp",
-    original: "/digital-drawings/attitude_super_vilain.webp",
-  },
-
-  {
-    src: "/digital-drawings/expression_petit.webp",
-    original: "/digital-drawings/expression_petit.webp",
-  },
-
-  {
-    src: "/digital-drawings/pre_turn.webp",
-    original: "/digital-drawings/pre_turn.webp",
+    src: "/custom/tempete.webp",
+    original: "/custom/tempete.webp",
+    caption: "tempete",
   },
 ];
 

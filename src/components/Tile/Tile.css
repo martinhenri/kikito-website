@@ -1,0 +1,76 @@
+/* src/components/Tile.css */
+.tile {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* Adjust the width as needed */
+    /* Adjust the height as needed */
+    background-size: cover;
+    background-position: center;
+
+    /* Optional: Add rounded corners */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.tile-link {
+    width: 30%;
+    height: 300px;
+    padding: 15px;
+}
+
+.tile-content {
+    font-family: "lemon-yellow-sun", sans-serif;
+    font-size: 1.5em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+}
+
+.tile-link {
+    position: relative;
+    width: 30%;
+    margin: 1%;
+    /* Optional: Add some margin between tiles */
+    /* Optional: Add some margin between tiles */
+    background-color: #ccc;
+    /* Example background color */
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+    overflow: hidden;
+}
+
+.tile-link::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+    /* This creates a 1:1 aspect ratio */
+}
+
+.tile-link>* {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tile:hover .tile-content {
+    background: rgba(0, 0, 0, 0.2);
+}

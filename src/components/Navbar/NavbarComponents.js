@@ -13,7 +13,6 @@ export const NavLink = styled(Link)`
   padding-left: 15px;
   padding-right: 15px;
   border-left: 1px solid rgb(153, 153, 153);
-  font-family: Helvetica, sans-serif;
   font-size: 16px;
   color: white;
   text-decoration: auto;

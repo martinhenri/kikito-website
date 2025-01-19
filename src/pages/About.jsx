@@ -11,7 +11,12 @@ const About = () => {
         />
         <div>
           <span className="display-flex-align-items-center pl-2">
-            <h1 className="mt-0 mb-0">Léa Biscarat</h1>
+            <h1
+              className="mt-0 mb-0"
+              style={{ fontFamily: "lemon-yellow-sun" }}
+            >
+              Léa Biscarat
+            </h1>
           </span>
           <p className="pl-2">
             Diplômée d'un master en animation 3D avec une spécialisation en

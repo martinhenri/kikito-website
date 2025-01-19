@@ -55,18 +55,6 @@ const TreeD = () => {
       <p className="legend mt-1">
         <i>Lighting/compo projet Space Apéro</i>
       </p>
-      <h1 className="pt-3">
-        <span>MODELISATION </span>
-        <img
-          className="align-self-center pl-1"
-          alt="Title maya icon"
-          src="/logos/logo-maya.webp"
-          style={{ height: "30px" }}
-        />
-      </h1>
-      <div className="modelisation-gallery">
-        <KikitoGallery images={modelisations} />
-      </div>
     </div>
   );
 };
