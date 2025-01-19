@@ -9,15 +9,19 @@ Artistic direction :
 - simple and sober
 - dark backgrounds / white font
 ## Development
-### Next feature / TODO
+### TODO
+#### P1
+- Arrange images in a grid
+- Fix manifest.json
+- Create a similar background without using an image
+  - at least adding placeholder background during loading time to prevent white flash
+#### P2
 - Media control (prevent visitors from downloading resources)
   - Using Vercel Blop to store and stream videos 
 - improve SEO
   - adding sitemap
   - migrate to Next.js
-- Create a similar background without using an image
-  - at least adding placeholder background during loading time to prevent white flash
-  
+
 
 ### Branches
 Usage of branch for new feature from main and using rebase to keep git history clean.
