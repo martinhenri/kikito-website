@@ -15,7 +15,9 @@ Artistic direction :
 - improve SEO
   - adding sitemap
   - migrate to Next.js
-- Reorganize / use carousel for videos in Animation page (to much on the same page) ?
+- Create a similar background without using an image
+  - at least adding placeholder background during loading time to prevent white flash
+  
 
 ### Branches
 Usage of branch for new feature from main and using rebase to keep git history clean.

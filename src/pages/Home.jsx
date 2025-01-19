@@ -3,38 +3,30 @@ import { NavLink } from "react-router-dom";
 import Tile from "../components/Tile/Tile";
 
 const Home = () => {
-  const [showVideo, setShowVideo] = useState(false);
-
+  const [showGif, setShowGif] = useState(false);
   const [isMenuVisible, setMenuVisible] = useState(false);
   const imgRef = useRef(null);
 
   useEffect(() => {
-    const hasSeenVideo = localStorage.getItem("hasSeenWelcomeVideo");
-    if (!hasSeenVideo) {
-      setShowVideo(true);
-      localStorage.setItem("hasSeenWelcomeVideo", "true");
+    const hasSeenGif = localStorage.getItem("hasSeenWelcomeGif");
+    if (!hasSeenGif) {
+      setShowGif(true);
+      localStorage.setItem("hasSeenWelcomeGif", "true");
     }
-    setMenuVisible(hasSeenVideo);
+    setMenuVisible(hasSeenGif);
   }, []);
 
   useEffect(() => {
     const img = imgRef.current;
-    if (img && img.complete) {
+    if (img) {
       handleImageLoad();
-    } else if (img) {
-      img.onload = handleImageLoad;
     }
-
-    return () => {
-      if (img) {
-        img.onload = null;
-      }
-    };
   }, [imgRef]);
 
   const handleImageLoad = () => {
+    console.log("GIF loadseds");
     // Estimate the duration of the GIF in milliseconds
-    const gifDuration = 8; // Example: 5 seconds
+    const gifDuration = 8700; // Example: 5 seconds
     console.log("GIF duration:", gifDuration);
     setTimeout(() => {
       displayTiles();
@@ -43,32 +35,21 @@ const Home = () => {
 
   const displayTiles = () => {
     setMenuVisible(true);
-    // hide video
-    if (document.querySelector("video")) {
-      document.querySelector("video").style.display = "none";
-    }
+    setShowGif(false);
   };
 
   return (
     <div className="container">
-      {/* {showVideo && (
-        <video
-          className="w-100"
-          autoPlay
-          muted
-          src="/videos/correctionGamma_H264.mp4"
-          onEnded={displayTiles}
-        />
-      )} */}
-      {showVideo && (
-        <img
-          className="w-100"
-          ref={imgRef}
-          src={"/videos/welcome.gif"}
-          alt="GIF"
-          style={{ display: isMenuVisible ? "none" : "block" }}
-        />
-      )}
+      <img
+        ref={imgRef}
+        src="/videos/welcome.gif"
+        alt="Welcome GIF"
+        style={{
+          width: "100%",
+          height: "auto",
+          display: showGif ? "block" : "none",
+        }}
+      />
       {isMenuVisible && (
         <div id="home-menu-tiles">
           <div className="d-flex justify-content-center">
