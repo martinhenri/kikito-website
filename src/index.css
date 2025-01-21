@@ -350,17 +350,40 @@ p {
 }
 
 .contact {
-  border: 1px solid black;
-  border-radius: 10px;
+  border: double black;
+  border-radius: 1.5vmin;
   width: 25%;
 }
 
 .contact a {
-  height: 100%;
+  color: black;
 }
 
 .contact-icon-container {
-  img {
-    height: 8vmin;
-  }
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 0.05rem;
+  /* Assuming mt-05 corresponds to 0.05rem */
+}
+
+.contact-icon {
+  width: 7vmin;
+  height: 7vmin;
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+
+.contact-icon.linkedin {
+  background-image: url('/public/logos/linkedin.webp');
+  background-size: 135%;
+}
+
+.contact-icon.gmail {
+  background-image: url('/public/logos/gmail.webp');
+}
+
+.contact-icon.instagram {
+  background-image: url('/public/logos/instagram.webp');
 }

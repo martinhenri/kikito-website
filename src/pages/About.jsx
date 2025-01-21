@@ -7,7 +7,11 @@ const About = () => {
         <img
           alt="Présentation"
           src="/documents/kikitropmims.webp"
-          style={{ width: "25%", objectFit: "cover", borderRadius: "10px" }}
+          style={{
+            width: "25%",
+            objectFit: "cover",
+            borderRadius: "1.5vmin",
+          }}
         />
         <div>
           <span className="display-flex-align-items-center pl-2">
@@ -42,32 +46,33 @@ const About = () => {
       </div>
       <div className="contact mt-1 mb-2">
         <span
-          className="display-flex-align-items-center pl-1 pt-1"
+          className="display-flex-align-items-center"
           style={{
             fontFamily: "lemon-yellow-sun",
-            fontSize: "1.5rem",
+            fontSize: "3.5vmin",
+            paddingLeft: "2.3vmin",
+            paddingTop: "1.5vmin",
           }}
         >
           CONTACT
         </span>
-        <div className="d-flex contact-icon-container mt-05">
+        <div className="d-flex contact-icon-container mt-05 justify-content-space-evenly">
           <a
             href="https://www.linkedin.com/in/l%C3%A9a-biscarat-b045aa133/"
             target="_blank"
             rel="noreferrer noopener"
-          >
-            <img src="/logos/linkedin.webp" alt="linkedin icon" />
-          </a>
-          <a href="mailto:biscaratlea@gmail.com">
-            <img src="/logos/gmail.webp" alt="gmail icon" />
-          </a>
+            className="contact-icon linkedin"
+          ></a>
           <a
             href="https://www.instagram.com/leabis_l.p.c"
             target="_blank"
             rel="noreferrer noopener"
-          >
-            <img src="/logos/instagram.webp" />
-          </a>
+            className="contact-icon instagram"
+          ></a>
+          <a
+            href="mailto:biscaratlea@gmail.com"
+            className="contact-icon gmail"
+          ></a>
         </div>
       </div>
     </div>
