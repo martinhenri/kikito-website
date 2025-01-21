@@ -27,12 +27,15 @@
 .w-100 {
   width: 100%;
 }
+
 .w-30 {
   width: 30%;
 }
+
 .w-32 {
   width: 32%;
 }
+
 .w-25 {
   width: 25%;
 }
@@ -67,12 +70,15 @@
 .justify-content-center {
   justify-content: center;
 }
+
 .justify-content-space-between {
   justify-content: space-between;
 }
+
 .justify-content-space-evenly {
   justify-content: space-evenly;
 }
+
 .justify-content-space-around {
   justify-content: space-around;
 }
@@ -84,6 +90,7 @@
 .m-1 {
   margin: var(--spacing-1);
 }
+
 .m-2 {
   margin: var(--spacing-2);
 }
@@ -91,18 +98,23 @@
 .mt-05 {
   margin-top: var(--spacing-05);
 }
+
 .mt-1 {
   margin-top: var(--spacing-1);
 }
+
 .mt-2 {
   margin-top: var(--spacing-2);
 }
+
 .mt-3 {
   margin-top: var(--spacing-3);
 }
+
 .mt-4 {
   margin-top: var(--spacing-4);
 }
+
 .mt-0 {
   margin-top: 0;
 }
@@ -110,9 +122,11 @@
 .mb-1 {
   margin-bottom: var(--spacing-1);
 }
+
 .mb-0 {
   margin-bottom: 0;
 }
+
 .mb-2 {
   margin-bottom: var(--spacing-2);
 }
@@ -120,6 +134,7 @@
 .ml-2 {
   margin-left: var(--spacing-2);
 }
+
 .ml-1 {
   margin-left: var(--spacing-1);
 }
@@ -134,6 +149,10 @@
 
 .pt-3 {
   padding-top: var(--spacing-3);
+}
+
+.pt-1 {
+  padding-top: var(--spacing-1);
 }
 
 .gap-1 {

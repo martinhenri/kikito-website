@@ -40,9 +40,17 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="contact mt-2 mb-2">
-        <span className="display-flex-align-items-center">CONTACT</span>
-        <div className="d-flex gap-1 contact-icon-container mt-05">
+      <div className="contact mt-1 mb-2">
+        <span
+          className="display-flex-align-items-center pl-1 pt-1"
+          style={{
+            fontFamily: "lemon-yellow-sun",
+            fontSize: "1.5rem",
+          }}
+        >
+          CONTACT
+        </span>
+        <div className="d-flex contact-icon-container mt-05">
           <a
             href="https://www.linkedin.com/in/l%C3%A9a-biscarat-b045aa133/"
             target="_blank"

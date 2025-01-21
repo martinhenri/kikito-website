@@ -42,7 +42,7 @@ code {
   background-color: grey;
 }
 
-.kikito-gallery-concepts .ReactGridGallery_custom-overlay {
+.ReactGridGallery_custom-overlay {
   overflow: hidden;
 }
 
@@ -350,7 +350,9 @@ p {
 }
 
 .contact {
-  margin-top: 50px;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 25%;
 }
 
 .contact a {
