@@ -34,7 +34,7 @@ const Paintings = () => {
         ></button>
         <div
           ref={scrollPaintingContainerRef}
-          className="kikito-gallery kikito-gallery-paintings"
+          className="kikito-gallery kikito-gallery-common kikito-gallery-paintings"
         >
           <KikitoGallery images={paintings} enableLoading />
         </div>

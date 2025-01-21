@@ -9,6 +9,8 @@ body {
   padding-bottom: 10vh;
 }
 
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -40,13 +42,38 @@ code {
   background-color: grey;
 }
 
+.kikito-gallery-concepts .ReactGridGallery_custom-overlay {
+  overflow: hidden;
+}
+
 .paintings-title {
   margin-top: 90px;
 }
 
-.kikito-gallery-paintings #ReactGridGallery {
+.kikito-gallery-common #ReactGridGallery {
   width: 1600px;
 }
+
+.kikito-gallery-concepts #ReactGridGallery {
+  width: 1335px;
+}
+
+/* first child*/
+.kikito-gallery-concepts #ReactGridGallery>div:first-child {
+  justify-content: space-between;
+  background-color: white;
+}
+
+
+.kikito-gallery-custom #ReactGridGallery {
+  width: 1235px;
+}
+
+.kikito-gallery-posters #ReactGridGallery {
+  width: 1450px;
+}
+
+
 
 .kikito-gallery-digital-drawings #ReactGridGallery {
   width: 2400px;
@@ -58,7 +85,7 @@ code {
   cursor: pointer;
 }
 
-.kikito-gallery-paintings #ReactGridGallery img {
+.kikito-gallery-common #ReactGridGallery img {
   height: 250px !important;
   cursor: pointer;
 }
@@ -68,13 +95,13 @@ code {
     --img-height: 25vw;
   }
 
-  .kikito-gallery-paintings #ReactGridGallery img,
+  .kikito-gallery-common #ReactGridGallery img,
   .kikito-gallery-digital-drawings #ReactGridGallery img {
     height: var(--img-height) !important;
     cursor: pointer;
   }
 
-  .kikito-gallery-paintings #ReactGridGallery {
+  .kikito-gallery-common #ReactGridGallery {
     width: calc(var(--img-height) * 6.4);
     /* 6,4 */
   }
@@ -84,9 +111,22 @@ code {
     /* 9,6 */
   }
 
+  .kikito-gallery-custom #ReactGridGallery {
+    width: calc(var(--img-height) * 4.9);
+  }
+
+  .kikito-gallery-posters #ReactGridGallery {
+    width: calc(var(--img-height) * 6);
+  }
+
+  .kikito-gallery-concepts #ReactGridGallery {
+    width: calc(var(--img-height) * 5.335);
+  }
+
   .nav-button-gallery {
-    padding: 5vw !important;
+    padding: 4vw !important;
     background-size: 3.5vw !important;
+    opacity: 0.5;
   }
 }
 
@@ -142,6 +182,7 @@ h1 {
 p {
   font-size: 18px;
   text-align: justify;
+  padding-bottom: 15px;
 }
 
 .display-flex-align-items-center {
@@ -226,7 +267,7 @@ p {
   border: none;
   padding: 40px 30px;
   cursor: pointer;
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
 .nav-button-gallery-prev {
