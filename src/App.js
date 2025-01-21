@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Route,
   BrowserRouter as Router,
@@ -19,6 +19,17 @@ import Concepts from "./pages/Concepts";
 import Custom from "./pages/Custom";
 
 function App() {
+  useEffect(() => {
+    const handleBeforeUnload = (event) => {
+      localStorage.clear();
+    };
+
+    window.addEventListener("beforeunload", handleBeforeUnload);
+
+    return () => {
+      window.removeEventListener("beforeunload", handleBeforeUnload);
+    };
+  }, []);
   return (
     <Router>
       <AnimationApp />
