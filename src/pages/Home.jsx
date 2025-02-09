@@ -8,12 +8,8 @@ const Home = () => {
   const imgRef = useRef(null);
 
   useEffect(() => {
-    const hasSeenGif = localStorage.getItem("hasSeenWelcomeGif");
-    if (!hasSeenGif) {
-      setShowGif(true);
-      localStorage.setItem("hasSeenWelcomeGif", "true");
-    }
-    setMenuVisible(hasSeenGif);
+    setShowGif(true);
+    setMenuVisible(false);
   }, []);
 
   useEffect(() => {
@@ -24,10 +20,8 @@ const Home = () => {
   }, [imgRef]);
 
   const handleImageLoad = () => {
-    console.log("GIF loadseds");
     // Estimate the duration of the GIF in milliseconds
     const gifDuration = 8700; // Example: 5 seconds
-    console.log("GIF duration:", gifDuration);
     setTimeout(() => {
       displayTiles();
     }, gifDuration);
