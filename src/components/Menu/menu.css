@@ -21,6 +21,7 @@ body {
 
 #menuButton img {
     height: 2.5vmax;
+    max-height: 38px;
 }
 
 .dropdown-menu {

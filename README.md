@@ -11,6 +11,10 @@ Artistic direction :
 ## Development
 ### TODO
 #### P1
+- Improve menu alignment
+  - Add responsive size for raccoon logo
+  - Remove fixed size for menu button
+  - Align both images
 - Arrange images in a grid
 - Add description to image
 - Fix manifest.json
