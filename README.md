@@ -13,7 +13,6 @@ Artistic direction :
 #### P1
 - Arrange images in a grid
 - Add description to image
-- reset local storage on exitpage
 - Fix manifest.json
 - Create a similar background without using an image
   - at least adding placeholder background during loading time to prevent white flash

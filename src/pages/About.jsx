@@ -45,18 +45,7 @@ const About = () => {
         </div>
       </div>
       <div className="contact mt-1 mb-2">
-        <span
-          className="display-flex-align-items-center"
-          style={{
-            fontFamily: "lemon-yellow-sun",
-            fontSize: "3.5vmin",
-            paddingLeft: "2.3vmin",
-            paddingTop: "1.5vmin",
-          }}
-        >
-          CONTACT
-        </span>
-        <div className="d-flex contact-icon-container mt-05 justify-content-space-evenly">
+        <div className="d-flex contact-icon-container mt-05 justify-content-between">
           <a
             href="https://www.linkedin.com/in/l%C3%A9a-biscarat-b045aa133/"
             target="_blank"
