@@ -1,0 +1,65 @@
+/* src/DropdownMenu.css */
+/* src/DropdownMenu.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+#menuButton {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    padding: 10px 20px;
+    /* backgrounds  transparent */
+    background: none;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1001;
+    /* Ensure the button is above the menu */
+}
+
+#menuButton img {
+    height: 2.5vmax;
+}
+
+.dropdown-menu {
+    position: absolute;
+    /* Adjust this value to position the menu below the button */
+    right: 10px;
+    top: 3vmax;
+    background: none;
+    background: url("../../background.webp");
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 10px;
+    width: 15vmin;
+    display: flex;
+    flex-direction: column;
+    /* Set a fixed width for the menu */
+}
+
+.menu-item {
+    background: none;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    font-size: 2.5vmin;
+    text-decoration: none;
+}
+
+.menu-item:hover {
+    color: #f0f0f0;
+}
+
+#menu-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-modal {
+    flex-direction: column;
+}
