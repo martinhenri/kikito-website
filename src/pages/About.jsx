@@ -51,17 +51,20 @@ const About = () => {
             target="_blank"
             rel="noreferrer noopener"
             className="contact-icon linkedin"
-          ></a>
+            aria-label="Profil LinkedIn"
+          />
           <a
             href="https://www.instagram.com/leabis_l.p.c"
             target="_blank"
             rel="noreferrer noopener"
             className="contact-icon instagram"
-          ></a>
+            aria-label="Profil Instagram"
+          />
           <a
             href="mailto:biscaratlea@gmail.com"
             className="contact-icon gmail"
-          ></a>
+            aria-label="Envoyer un email"
+          />
         </div>
       </div>
     </div>
