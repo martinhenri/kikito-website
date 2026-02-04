@@ -17,6 +17,7 @@ import { SpeedInsights } from "@vercel/speed-insights/react";
 import Posters from "./pages/Posters";
 import Concepts from "./pages/Concepts";
 import Custom from "./pages/Custom";
+import Welcome from "./pages/Welcome";
 
 function App() {
   return (
@@ -42,7 +43,8 @@ function AnimationApp() {
             timeout={500}
           >
             <Routes location={location}>
-              <Route exact path="/" element={<Home />} />
+              <Route exact path="/" element={<Welcome />} />
+              <Route path="/home" element={<Home />} />
               <Route path="/posters" element={<Posters />} />
               <Route path="/3d" element={<TreeD />} />
               <Route path="/paintings" element={<Paintings />} />

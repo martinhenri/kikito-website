@@ -6,7 +6,7 @@ const About = () => {
       <div className="d-flex" style={{ paddingTop: "10vh" }}>
         <img
           alt="Présentation"
-          src="/documents/kikitropmims.webp"
+          src="/documents/kikitropmims.JPG"
           style={{
             width: "25%",
             objectFit: "cover",

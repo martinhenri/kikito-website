@@ -36,7 +36,7 @@ const Menu = () => {
       </button>
       {isOpen && (
         <div id="dropdownMenu" className="dropdown-menu">
-          <NavLink to="/" className="menu-item">
+          <NavLink to="/home" className="menu-item">
             Accueil
           </NavLink>
           <NavLink to="/posters" className="menu-item">

@@ -35,9 +35,10 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     padding: 10px;
-    width: 15vmin;
+    width: vmin;
     display: flex;
     flex-direction: column;
+    font-family: guildford, sans-serif;
     /* Set a fixed width for the menu */
 }
 
@@ -48,12 +49,12 @@ body {
     width: 100%;
     text-align: left;
     cursor: pointer;
-    font-size: 2.5vmin;
+    font-size: 2vmin;
     text-decoration: none;
 }
 
 .menu-item:hover {
-    color: #f0f0f0;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 #menu-container {

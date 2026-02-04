@@ -203,12 +203,11 @@ p {
 @media screen and (min-width: 980px) {
   .container {
     min-width: 980px;
-    width: 90%;
+    width: 80%;
   }
 }
 
 .container {
-  max-width: 980px;
   padding-right: 4%;
   padding-left: 4%;
   margin: 0 auto;
@@ -240,6 +239,11 @@ p {
   width: 139px;
   height: 90px;
   object-fit: cover;
+
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
 }
 
 #menu a {

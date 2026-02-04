@@ -1,5 +1,15 @@
 export const posters = [
   {
+    src: "/posters/affiche_grenoble.webp",
+    original: "/posters/affiche_grenoble.webp",
+    caption: "Affiche Grenoble",
+  },
+  {
+    src: "/posters/Affiche_Minimisant_1.webp",
+    original: "/posters/Affiche_Minimisant_1.webp",
+    caption: "Affiche Minimistan",
+  },
+  {
     src: "/posters/Chartreuse.webp",
     original: "/posters/Chartreuse.webp",
     caption: "Chartreuse",
@@ -25,11 +35,7 @@ export const posters = [
     original: "/posters/JimmyB.webp",
     caption: "JimmyB",
   },
-  {
-    src: "/posters/JimmyBaffiche.webp",
-    original: "/posters/JimmyBaffiche.webp",
-    caption: "JimmyB encadré",
-  },
+
   {
     src: "/posters/Lakers.webp",
     original: "/posters/Lakers.webp",
@@ -40,11 +46,7 @@ export const posters = [
     original: "/posters/HeyJoe02.webp",
     caption: "Groupe de musique",
   },
-  {
-    src: "/posters/ImbiberAffiche.webp",
-    original: "/posters/ImbiberAffiche.webp",
-    caption: "Imbiber encadré",
-  },
+
   {
     src: "/posters/RaquetGang.webp",
     original: "/posters/RaquetGang.webp",
@@ -59,17 +61,6 @@ export const posters = [
     src: "/posters/heyJoe.webp",
     original: "/posters/heyJoe.webp",
     caption: "Groupe de musique",
-  },
-
-  {
-    src: "/posters/medusaAffiche.webp",
-    original: "/posters/medusaAffiche.webp",
-    caption: "Médusa encadré",
-  },
-  {
-    src: "/posters/singeAffiche.webp",
-    original: "/posters/singeAffiche.webp",
-    caption: "Inspecteur encadré",
   },
 ];
 
@@ -204,6 +195,11 @@ export const concepts = [
 ];
 export const paintings = [
   {
+    src: "/paintings/Peinture_bananes.webp",
+    original: "/paintings/Peinture_bananes.webp",
+    caption: "Sous les bananiers",
+  },
+  {
     src: "/paintings/peintureMurale.webp",
     original: "/paintings/peintureMurale.webp",
     caption: "Peinture Murale",
@@ -212,6 +208,11 @@ export const paintings = [
     src: "/paintings/medusa.webp",
     original: "/paintings/medusa.webp",
     caption: "Street Médusa",
+  },
+  {
+    src: "/paintings/Peinture_banae_1.webp",
+    original: "/paintings/Peinture_banae_1.webp",
+    caption: "Banana",
   },
   {
     src: "/paintings/toile01.webp",
@@ -270,6 +271,57 @@ export const paintings = [
   },
 ];
 export const customs = [
+  // public/custom/personnaliser_camille.webp public/custom/personnaliser_effeil.webp public/custom/personnaliser_famille_1.webp public/custom/personnaliser_famille.webp public/custom/personnaliser_farah.webp public/custom/personnaliser_juldev.webp public/custom/personnaliser_mariage.webp public/custom/Personnaliser_MImi.webp public/custom/personnaliser_tazio.webp
+  {
+    src: "/custom/personnaliser_camille.webp",
+    original: "/custom/personnaliser_camille.webp",
+    caption: "Gros calin petit chien",
+  },
+  {
+    src: "/custom/personnaliser_effeil.webp",
+    original: "/custom/personnaliser_effeil.webp",
+    caption: "City of lights",
+  },
+  {
+    src: "/custom/personnaliser_famille.webp",
+    original: "/custom/personnaliser_famille.webp",
+    caption: "Family time - rock edition",
+  },
+  {
+    src: "/custom/personnaliser_famille_1.webp",
+    original: "/custom/personnaliser_famille_1.webp",
+    caption: "Family time - river edition",
+  },
+  {
+    src: "/custom/Arthur01.webp",
+    original: "/custom/Arthur01.webp",
+    caption: "Family time - thug edition",
+  },
+  {
+    src: "/custom/personnaliser_farah.webp",
+    original: "/custom/personnaliser_farah.webp",
+    caption: "Family time - welcome home",
+  },
+  {
+    src: "/custom/personnaliser_tazio.webp",
+    original: "/custom/personnaliser_tazio.webp",
+    caption: "Tazio - the kindest dog of the world",
+  },
+  {
+    src: "/custom/personnaliser_mariage.webp",
+    original: "/custom/personnaliser_mariage.webp",
+    caption: "Wedding day, memories",
+  },
+  {
+    src: "/custom/Personnaliser_MImi.webp",
+    original: "/custom/Personnaliser_MImi.webp",
+    caption: "Cute little Mimi",
+  },
+  {
+    src: "/custom/personnaliser_juldev.webp",
+    original: "/custom/personnaliser_juldev.webp",
+    caption: "Happy couple, happy dog",
+  },
   {
     src: "/custom/02.webp",
     original: "/custom/02.webp",
@@ -284,11 +336,6 @@ export const customs = [
     src: "/custom/LUNAinsta.webp",
     original: "/custom/LUNAinsta.webp",
     caption: "La chartreuse de Luna",
-  },
-  {
-    src: "/custom/Arthur01.webp",
-    original: "/custom/Arthur01.webp",
-    caption: "Thug but cute family",
   },
   {
     src: "/custom/Arthur03(1).webp",
