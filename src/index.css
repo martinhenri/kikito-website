@@ -203,18 +203,16 @@ p {
 @media screen and (min-width: 980px) {
   .container {
     min-width: 980px;
-    width: 80%;
+    width: 90%;
   }
 }
 
 .container {
+  max-width: 980px;
   padding-right: 4%;
   padding-left: 4%;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /* Cette propriété auto applique une marge égale à gauche et à droite, centrée horizontalement */
 }
 
 #menu {

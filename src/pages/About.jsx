@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="container">
+    <div className="container" style={{ maxWidth: "none" }}>
       <div className="d-flex" style={{ paddingTop: "10vh" }}>
         <img
           alt="Présentation"
@@ -11,6 +11,8 @@ const About = () => {
             width: "25%",
             objectFit: "cover",
             borderRadius: "1.5vmin",
+            display: "block",
+            transform: "translateZ(0)",
           }}
         />
         <div>
