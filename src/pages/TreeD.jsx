@@ -1,6 +1,4 @@
 import React from "react";
-import KikitoGallery from "../components/Gallery/KikitoGallery";
-import { modelisations } from "../components/Gallery/Images";
 import ReactCompareImage from "../components/ReactCompareImage/ReactCompareImage";
 const TreeD = () => {
   const skeleton = (
