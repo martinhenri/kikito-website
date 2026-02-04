@@ -211,7 +211,10 @@ p {
   padding-right: 4%;
   padding-left: 4%;
   margin: 0 auto;
-  /* Cette propriété auto applique une marge égale à gauche et à droite, centrée horizontalement */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #menu {
