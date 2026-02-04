@@ -4,7 +4,6 @@ import { concepts } from "../components/Gallery/Images";
 
 const Concepts = () => {
   const scrollPosterContainerRef = useRef(null);
-  const scrollDrawingContainerRef = useRef(null);
 
   const handleScroll = (direction, ref) => {
     const scrollContainer = ref.current;

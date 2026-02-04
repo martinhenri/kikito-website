@@ -4,7 +4,6 @@ import { posters } from "../components/Gallery/Images";
 
 const Posters = () => {
   const scrollPosterContainerRef = useRef(null);
-  const scrollDrawingContainerRef = useRef(null);
 
   const handleScroll = (direction, ref) => {
     const scrollContainer = ref.current;
